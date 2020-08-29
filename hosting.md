@@ -1,19 +1,23 @@
 # Developer Docs
+
 ## Hosting
-https://disciple.tools/dev-docs/hosting/
+
+<!-- copied from https://disciple.tools/dev-docs/hosting/ -->
 
 ## Backups
+
 You know that you need to keep your data backed up. Here are some things to keep in mind. Not all backups are equal. You need to have a backup that you can access if your website goes down or if your hosting provider accidentally deletes your account (this happens). This means that any backup that stays on the server your site is on isn’t a reliable backup. You must have a secure remote backup of you Disciple.Tools instance. This can be with Amazon S3, Google Drive or any other secure storage location.
 
 ### UpdraftPlus
 
-We recommend and use UpraftPlus for our backups. The free version does not backup Disciple.Tools data, so to use this plugin you must pay for the premium account. See UpdraftPlus for more info.
+We recommend and use [UpraftPlus](https://updraftplus.com/?afref=1012/) for our backups. The free version does not backup Disciple.Tools data, so to use this plugin you must pay for the premium account. See [UpdraftPlus](https://updraftplus.com/?afref=1012/) for more info.
 
 ### BackWPup
 
-We’ve also tested BackWPup: https://wordpress.org/plugins/backwpup/. This plugin is free but more difficult to set up.
+We’ve also tested [BackWPup](https://wordpress.org/plugins/backwpup/). This plugin is free but more difficult to set up.
 
 ## CRON
+
 Disciple.Tool relies on cron jobs for certain activities. Some of these are sending scheduled emails and creating update needed notifications.
 
 WordPress’s default scheduling strategy depends on traffic. So then if no one comes to the site, the task may not run for a while. It will wait until the next visitor opens the site. A normal Disciple.Tools instance will not generate much traffic. This also slows down the server for this visitor as all these background tasks are now running.
