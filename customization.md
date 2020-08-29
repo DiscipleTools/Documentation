@@ -7,7 +7,7 @@
 
 ## Adding a metrics menu
 
-See [Disciple.Tools Advanced Metrics Template](https://github.com/DiscipleTools/disciple-tools-advanced-metrics-template)
+See [Disciple.Tools Advanced Metrics Template](https://github.com/DiscipleTools/disciple-tools-advanced-metrics-template#disciple-tools-advanced-metrics-template)
 
 ## Adding Fields and Tiles
 
