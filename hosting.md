@@ -1,8 +1,10 @@
-# Developer Docs
-
-## Hosting
+# Hosting
 
 <!-- copied from https://disciple.tools/dev-docs/hosting/ -->
+
+- [Backups](#backups)
+- [CRON](#cron)
+- [404 Errors on new install](#404-errors-on-new-install)
 
 ## Backups
 
