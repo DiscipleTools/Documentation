@@ -1,4 +1,4 @@
-# DiscipleTools Code of Conduct
+# Disciple.Tools Code of Conduct
 
 Like the technical community as a whole, the DiscipleTools team and community is made up of volunteers from all over the world. Diversity is a strength, but it can also lead to communication issues and unhappiness. To that end, we have a few ground rules that we ask people to adhere to.
 
