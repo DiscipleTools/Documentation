@@ -20,3 +20,9 @@ Please read our [Code of Conduct](code-of-conduct.md)
 ### Disciple.Tools Developer Setup 
 
 Get set up on your local dev machine with these [local setup instructions](theme-local-setup.md)
+
+
+### Disciple.Tools Developer Documentation
+
+See https://disciple.tools/dev-docs/
+
