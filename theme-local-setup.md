@@ -1,15 +1,19 @@
 
 # Disciple.Tools Development Setup
 
-Contents
+## Contents
 
 [Hosting on WPEngine](WPEngine-hosting.md)
+
 [LocalWP Setup](#LocalWP)
+
 [Mobile App Setup](mobile-app-setup.md)
 
-Appendix: Alternate D.T Docker/Wordpress Setup	6
-Docker Multi-site Setup	9
-Making Docker D.T. Accessible from Mobile	10
+[Docker-based Setup (LocalWP alternative)](dt-docker.md)
+
+[Docker Multi-site Setup](dt-docker.md#docker-multi-site-setup)
+
+[Making Docker D.T. Accessible from Mobile](dt-docker.md##making-docker-dt-accessible-from-mobile)
 
 ## LocalWP
 [LocalWP](https://localwp.com/#) provides a simple way to configure a WordPress development environment.  
