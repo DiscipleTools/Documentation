@@ -34,7 +34,7 @@
     > - Select install for **all users** (requires Administrator privileges).
     > - **Run Local but do not create a website yet**, LocalWP needs to be able to write to your `c:\Windows\System32\Drivers\etc\hosts` file and set up SSL.  Your antivirus will not like this so you **must** first “whitelist” Local. 
     >
-    > - If you use Kapersky 2020 (for example), these are the steps: [*(source)*](https://localwp.com/community/t/how-to-run-local-5-0-7-windows-10-antivirus-software-kaspersky/15290)
+    > - As an example: if you use Kapersky 2020, these are the steps: [*(source)*](https://localwp.com/community/t/how-to-run-local-5-0-7-windows-10-antivirus-software-kaspersky/15290)
     >   1. In the main windows go to More Tools -> Manage applications -> Application Controls -> Manage applications
     >   2. In the search box type “local”
     >   3. Double click on Local.exe – **Be careful it is the right application!**
@@ -51,7 +51,7 @@
     >   5. Press "Save"
     ><br><br>
 
-2. LocalWP will ask if you want to create a new site, or press the large + in the lower left corner.
+2. LocalWP will ask if you want to create a new site, or press the large <b style="color: green;">&#x271A;</b> in the lower left corner.
 
    a. Provide a site name and choose ADVANCED OPTIONS to change defaults
       1. Change the site domain and browse for where you want your site’s code to be stored. (You may need to create the folder)  
@@ -77,7 +77,7 @@
 
    e. You can access your site via **both** http:// and https://
 
-   - LocalWP will create an SSL certificate if you select the TRUST button (which will bypass your browser’s security warning)
+   - LocalWP will create an SSL certificate if you select the <b style="color: green;">TRUST</b> button (which will bypass your browser’s security warning)
    - e.g. If the site’s name is D.T, then both addresses will work <http://dt.local> and <https://dt.local>
 
 3. Install Theme.
