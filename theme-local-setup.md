@@ -40,18 +40,16 @@
     >   3. Double click on Local.exe – **Be careful it is the right application!**
     >   4. Under Exclusions check:
     >
-    >      [X] Do not monitor application activity
-    >
-    >      [X] Do not inherit restriction from the (application's) parent process
-    >
-    >      [X] Do not monitor the activity of child applications
-    >
     >      ![Kapersky Settings](images/Kapersky_Settings.png)
+    >
+    >      - [X] Do not monitor application activity
+    >      - [X] Do not inherit restriction from the (application's) parent process
+    >      - [X] Do not monitor the activity of child applications
     >
     >   5. Press "Save"
     ><br><br>
 
-2. LocalWP will ask if you want to create a new site, or press the large <b style="color: green;">&#x271A;</b> in the lower left corner.
+2. LocalWP will ask if you want to create a new site, or press the large **&#x271A;** in the lower left corner.
 
    a. Provide a site name and choose ADVANCED OPTIONS to change defaults
       1. Change the site domain and browse for where you want your site’s code to be stored. (You may need to create the folder)  
@@ -77,7 +75,7 @@
 
    e. You can access your site via **both** http:// and https://
 
-   - LocalWP will create an SSL certificate if you select the <b style="color: green;">TRUST</b> button (which will bypass your browser’s security warning)
+   - LocalWP will create an SSL certificate if you select the **TRUST** button (which will bypass your browser’s security warning)
    - e.g. If the site’s name is D.T, then both addresses will work <http://dt.local> and <https://dt.local>
 
 3. Install Theme.
