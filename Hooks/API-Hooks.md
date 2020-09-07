@@ -42,7 +42,7 @@ Parameters 5: string $post_type, int post_id, array $initial_request_fields, arr
 
 **dt_after_get_post_fields_filter** filter  
 Add, modify or remove fields from the response  
-Parameters 2: array $fields, $post_type
+Parameters 2: array $fields, string $post_type
 
 ## List Post
 **dt_search_viewable_posts_query** filter  
@@ -51,8 +51,19 @@ Parameters 1: array $query_fields
 
 **dt_adjust_post_custom_fields**  filter  
 Runs an each post in the query result. Add, remove, or modify the post fields 
-Parameters 2: array $fields, $post_type
+Parameters 2: array $fields, string $post_type
 
 **dt_list_posts_custom_fields**  filter  
 Modify the response before the list of posts is returned.  
-Parameters 2: array $request_response, $post_type
+Parameters 2: array $request_response, string $post_type
+
+
+## Comments 
+**dt_comment_created**  Action  
+Runs after a comment is created  
+Parameters 4: string $post_type, int $post_id, int $created_comment_id, string $comment_type
+
+**dt_filter_post_comments**  Filter  
+Modify the response before the list of comments is returned.  
+Parameters 3: array $request_body, sting $post_type, int $post_id
+
