@@ -3,7 +3,7 @@
 
 ## Contents
 
-- [Hosting on WPEngine](WPEngine-hosting.md)
+- [Hosting on WPEngine](../WPEngine-hosting.md)
 
 - [LocalWP Setup](#LocalWP)
 
