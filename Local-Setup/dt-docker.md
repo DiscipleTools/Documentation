@@ -49,7 +49,7 @@ There are currently three sets of instructions for setting up a Disciple Tools s
 > **For Windows:**
 >
 > - When you start the Docker Desktop, **if necessary** it will provide you with additional instructions to update WSL 2 (Windows Subsystem for Linux)
-> - If the user account you commonly use does not have admin privileges, it will be added to the docker-users group so you can run docker directly **without** requiring “runas”.
+> - If the user account you commonly use does not have admin privileges, it will be added to the docker-users group so you can run docker directly **without** requiring “runas”.  
 > ![Configure Windows Docker Users](images/Win_Docker_Users.png)
 
 ### Configure SSL
