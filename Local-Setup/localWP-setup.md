@@ -1,38 +1,21 @@
-
-# Disciple.Tools Development Setup
-
-## Contents
-
-- [Hosting on WPEngine](../WPEngine-hosting.md)
-
-- [LocalWP Setup](#LocalWP)
-
-- [Mobile App Setup](mobile-app-setup.md)
-
-- [Docker-based Setup (LocalWP alternative)](dt-docker.md)
-  
-  - [Docker Multi-site Setup](dt-docker.md#docker-multi-site-setup)
-
-  - [Making Docker D.T. Accessible from Mobile](dt-docker.md##making-docker-dt-accessible-from-mobile)
-
-## LocalWP
+# LocalWP
 
 [LocalWP](https://localwp.com/#) provides a simple way to configure a WordPress development environment.  
 
 1. Install LocalWP on your machine:
 
    a. Download the appropriate installer for your platform from the list on: <https://localwp.com/community/>
-      - If a dialog asking for your platform type appears, you must have pressed the DOWNLOAD button in the upper right of the web page **instead** - You do not have to fill in all the information, but you must give your email address.
+      - *If a dialog asking for your platform type appears*, you must have pressed the DOWNLOAD button in the upper right of the web page *instead* - You do not have to fill in all the information, but you must give your email address.
       - The installer should download automatically, if not then follow the instructions
 
    b. Installing LocalWP on **MacOS** and **Linux** is straight forward. For Windows, especially with a 3rd-party antivirus, it requires more effort.
 
     > ***Note*:** Some VPNs set firewalls on your network configuration, which will likely conflict with LocalWP.
 
-    > ### Installing on Windows
+    > ## Installing on Windows
     >
     > - Select install for **all users** (requires Administrator privileges).
-    > - **Run Local but do not create a website yet**, LocalWP needs to be able to write to your `c:\Windows\System32\Drivers\etc\hosts` file and set up SSL.  Your antivirus will not like this so you **must** first “whitelist” Local. 
+    > - **Run Local but do not create a website yet**, LocalWP needs to be able to write to your `c:\Windows\System32\Drivers\etc\hosts` file and set up SSL.  Your antivirus will not like this so you **must** first “whitelist” Local.
     >
     > - As an example: if you use Kapersky 2020, these are the steps: [*(source)*](https://localwp.com/community/t/how-to-run-local-5-0-7-windows-10-antivirus-software-kaspersky/15290)
     >   1. In the main windows go to More Tools -> Manage applications -> Application Controls -> Manage applications
@@ -63,7 +46,7 @@
       > ***Warning***: There is currently a bug in LocalWP when **Apache** and **PHP 7.4.1** are used together. i.e. “No input file specified” appears when logging into Wordpress. **NGINX** and **PHP 7.4.1** work together fine
 
    c. Provide WordPress Username, Password and Email address
-      - If you wish the site to be Multisite, select this under ADVANCED OPTIONS
+      - **If** you wish the site to be **Multisite**, select this under ADVANCED OPTIONS
       - Select “ADD SITE”
   
    d. Wait for WordPress, etc. to be downloaded and the site to be created
@@ -76,14 +59,13 @@
    e. You can access your site via **both** http:// and https://
 
    - LocalWP will create an SSL certificate if you select the **TRUST** button (which will bypass your browser’s security warning)
-   - e.g. If the site’s name is D.T, then both addresses will work <http://dt.local> and <https://dt.local>
+   - e.g. If the site’s name is D.T, then both addresses will work `http://dt.local` and `https://dt.local`
 
 3. Install Theme.
    See <https://github.com/DiscipleTools/disciple-tools-theme>
 
     1. Follow installation instructions:  
         <https://github.com/DiscipleTools/disciple-tools-theme#how-to-install>
-
     2. Download latest release:  
         <https://github.com/DiscipleTools/disciple-tools-theme/releases/latest/download/disciple-tools-theme.zip>
 
