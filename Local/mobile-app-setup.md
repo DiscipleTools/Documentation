@@ -135,6 +135,7 @@ This may take a while
 ## 4. Run the Development Environment
 
 Use the NPM start command:
+
    ```shell
     > npm start
    ```
