@@ -7,7 +7,7 @@
 
 - **Hosting on a Local Computer**
 
-  - [LocalWP Based Setup](LocalWP-setup.md)
+  - [LocalWP Based Setup](localWP-setup.md)
 
   - [Alternative Docker Based Setup](dt-docker.md)
     - [Enable Debugging](dt-docker.md#enable-debugging)
