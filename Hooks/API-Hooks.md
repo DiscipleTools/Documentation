@@ -1,3 +1,5 @@
+Documentation for theme version 1.0.0 or greater
+
 ## Post Create
 
 **dt_create_post_check_proceed** filter  
@@ -25,7 +27,7 @@ Parameters 3: string $post_type, int post_id, array $initial_request_fields
 
 **dt_post_update_fields**  filter  
 Add, remove or modify fields before the fields are processed.  
-Parameters 3: array $fields, string $post_type, int $post_id
+Parameters 4: array $fields, string $post_type, int $post_id, array $existing_post
 
 **dt_post_create_allow_fields** filter  
 Add extra field keys that are allowed. The API will reject requests with fields that are not declared or allowed  
