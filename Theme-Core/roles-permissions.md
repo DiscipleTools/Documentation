@@ -19,7 +19,7 @@ An example is the Dispatcher role has has permission to see and update all acces
 The access module looks for users which that capability and gives them access to all contacts of type 'access'.
 
 
-#Roles
+# Roles
 Since version 1.0.0 Roles are modular. The theme sets declares a set of roles and their capabilities. Plugin can add roles and modify capabilities on all roles.
 
 Let's build out the Dispatcher role.
