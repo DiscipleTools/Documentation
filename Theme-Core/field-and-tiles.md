@@ -27,7 +27,7 @@ function dt_contact_fields( array $fields, string $post_type = ""){
     return $fields;
 }
 ```
-See (Field Options)[fields.md] for documentation on the field types.
+See [Field Options](fields.md) for documentation on field types.
 
 ## Adding a Tile
 ```
@@ -73,4 +73,4 @@ public function dt_add_section( $section, $post_type ) {
 ```
 
 ## End result
-[image]
+![End result](../assets/tile-and-fields.png)
