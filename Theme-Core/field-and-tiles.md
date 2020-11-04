@@ -27,6 +27,7 @@ function dt_contact_fields( array $fields, string $post_type = ""){
     return $fields;
 }
 ```
+See (Field Options)[fields.md] for documentation on the field types.
 
 ## Adding a Tile
 ```
