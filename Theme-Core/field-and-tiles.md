@@ -69,7 +69,6 @@ public function dt_add_section( $section, $post_type ) {
         <?php
     }
 }
-
 ```
 
 ## End result
