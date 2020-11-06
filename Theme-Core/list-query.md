@@ -228,12 +228,21 @@ let searchParameters = { // AND
 }
 ```
 
+### Recently viewed posts
 
+**dt_recent** (bool) true. Cannot be combined with other parameters except: **fields_to_return**
 
+Example:
+```
+//Get the 30 most recently viewed posts by the user making the request. 
+let searchParameters = {
+  dt_recent: true
+}
+```
 
 ### Paging Parameters
 **offset** (integer) the number of records to skip. Optional.
-**limit** (integer) the number of records to include in the response. Default is 100. Warning: a large number may cause a server memory error. Optional.
+**limit** (integer) the number of records to include in the response. Default is 100, Maximum: 1000. Warning: a large number may cause a server memory error. Optional.
 
 Example:
 ```
