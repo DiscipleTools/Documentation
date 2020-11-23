@@ -20,3 +20,4 @@ Add this css to an icon to change its color.
 To #3F729B  ![#3F729B](https://placehold.it/15/3F729B/000000?text=+)
 `filter: invert(41%) sepia(42%) saturate(518%) hue-rotate(164deg) brightness(94%) contrast(100%);`
 
+See https://codepen.io/sosuke/pen/Pjoqqp
