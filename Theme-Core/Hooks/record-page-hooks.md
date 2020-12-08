@@ -13,4 +13,4 @@ Parameters 2: string $tile_key, string $post_type
 
 **dt_details_additional_tiles**  Filter  
 Declare other tiles to display.  
-arameters 2: array $tiles, string $post_type  
+Parameters 2: array $tiles, string $post_type  
