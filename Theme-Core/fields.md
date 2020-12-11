@@ -9,6 +9,8 @@
 - number
 - array
 - post_user_meta
+- boolean
+- location
 
 ## Adding fields
 ```
