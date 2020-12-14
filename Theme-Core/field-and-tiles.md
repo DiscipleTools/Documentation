@@ -49,7 +49,7 @@ Change the filter priority to determine the order of this code
 
 ```
 add_action( "dt_details_additional_section", "dt_add_section", 30, 2 );
-public function dt_add_section( $section, $post_type ) {
+function dt_add_section( $section, $post_type ) {
     if ( $section === "contact_language" && $post_type === "contacts" ) {
         ?>
         <!-- need you own css? -->
