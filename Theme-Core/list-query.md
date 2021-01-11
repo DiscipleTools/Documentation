@@ -218,7 +218,11 @@ let searchParameters = {
 // records that are of type "personal" OR coached by me
 let searchParameters = {
   fields: [
-    { type: ["personal"], coached_by: [ "me" ] } //OR 
+    { 
+      type: ["personal"],
+      //OR 
+      coached_by: [ "me" ] 
+    }
   ],
   sort: "name"
 }
@@ -228,16 +232,25 @@ let searchParameters = {
 // records that are ( ( type "personal" AND coached_by me ) OR ( assigned to me and active ) ) AND shared with me
 let searchParameters = {
   fields: [
-    //AND
+    
     [
-      //OR
+      
       {
         type: ["personal"],
+        // AND
         coached_by: [ "me" ] 
       },
-      { assigned_to: [ "me" ], overall_status: [ "active" ] }
+      // OR 
+      {
+        assigned_to: [ "me" ], 
+        //AND
+        overall_status: [ "active" ]
+      }
     ],
-    { shared_with: [ "me" ] }
+    //AND
+    {
+      shared_with: [ "me" ]
+    }
 }
 ```
 
