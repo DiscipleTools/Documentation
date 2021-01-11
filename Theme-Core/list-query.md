@@ -196,35 +196,48 @@ The first level of values has AND logic. Wrapping them in an array gives them an
 3rd layer: AND
 etc
 
+Note that the query is sent in the fields array and thath the structure is a bit different.
+
 Examples:
 ```
 // records that are of field `type` `personal` AND coached by me
-let searchParameters = { //AND
-  type: ["personal"],
-  coached_by: [ "me" ]
+let searchParameters = {
+  fields: [
+    { 
+      type: ["personal"],  
+    }, 
+    // AND 
+    {
+      coached_by: [ "me" ]
+    }
+  ],
+  sort: "name"
 }
 ```
 ```
 // records that are of type "personal" OR coached by me
 let searchParameters = {
-  [ //OR 
-    type: ["personal"],
-    coached_by: [ "me" ]
-  ]
+  fields: [
+    { type: ["personal"], coached_by: [ "me" ] } //OR 
+  ],
+  sort: "name"
 }
 ```
 
 ```
-// records that are ( ( type "personal" AND coached_by me ) OR assigned to me ) AND shared with me
-let searchParameters = { // AND
-  [  // OR 
-    [   // AND
-      type: ["personal"],
-      coached_by: [ "me" ] 
+// records that are ( ( type "personal" AND coached_by me ) OR ( assigned to me and active ) ) AND shared with me
+let searchParameters = {
+  fields: [
+    //AND
+    [
+      //OR
+      {
+        type: ["personal"],
+        coached_by: [ "me" ] 
+      },
+      { assigned_to: [ "me" ], overall_status: [ "active" ] }
     ],
-    assigned_to: [ "me" ] 
-  ],
-  shared_with: [ "me"]
+    { shared_with: [ "me" ] }
 }
 ```
 
