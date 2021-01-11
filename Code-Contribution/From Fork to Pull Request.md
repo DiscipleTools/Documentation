@@ -80,11 +80,11 @@ The 'new-feature' branch should be a mirror of the upstream repository's master 
 &nbsp;
 
 ### 5. Commit your code
-After you work your code-writing magic, commit the changes to your fork.
+After you work your code-writing magic, commit the changes to your fork (AKA, origin), making sure you specify the branch name that doesn't yet exist on your fork.
 
 `git commit -am 'my new awesome commit description goes here'`
 
-`git push`
+`git push origin new-branch`
 
 &nbsp;
 
