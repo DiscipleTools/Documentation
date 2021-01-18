@@ -88,9 +88,12 @@ Show update notifications if your main site is not an instance of Disciple.Tools
 
 
 ## Notes
-WPEngine does have a publicly accessible error log (though you need to know the link to access it). Error logs have the potential to dump personal contact info.
+- WPEngine does have a publicly accessible error log (though you need to know the link to access it). Error logs have the potential to dump personal contact info.
 
-WPEngine has a small storage limit per account, so don't store a lot of backups locally.
-With a multisite the option “Secure all URLs” with HTTPS does not always work.
+- WPEngine has a small storage limit per account, so don't store a lot of backups locally.
 
-When you want to add another WPEngine instance, you can stay on the cheapest plan and under Billing > Add-ons add a site for $200
+- With a multisite the option “Secure all URLs” with HTTPS does not always work.
+
+- When you want to add another WPEngine instance, you can stay on the cheapest plan and under Billing > Add-ons add a site for $200
+
+- cairocoder01 has instructions on how to expidite setting up multiple WPEngine instances: [DT Setup Automation](https://github.com/cairocoder01/dt-setup-automation)
