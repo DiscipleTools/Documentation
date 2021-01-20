@@ -10,9 +10,10 @@ Our ambition is to build disciple making software that unleashes your obedience 
 
 Here you will find documentation for:
 
-- [Developing and customizing the D.T theme](customization.md)
+- [Setting up your local environment](Local-Setup)
+- [Developing and customizing the D.T theme](Theme-Core)
 - Building D.T plugins and extensions
-- [Hosting](hosting.md)
+- [Hosting](Hosting)
 - Translation <!-- [Translation](translation.md) -->
 
 ## Start Here
@@ -30,9 +31,9 @@ For Disciple.Tools (WP theme) specific recommendations, see [How to Contribute
 
 Please read our [Code of Conduct](code-of-conduct.md)
 
-### Disciple.Tools Developer Setup 
+### Disciple.Tools Developer Setup
 
-Get set up on your local dev machine with these [local setup instructions](Local/theme-local-setup.md)
+Get set up on your local dev machine with these [local setup instructions](Local-Setup)
 
 ### Disciple.Tools Developer Documentation
 
