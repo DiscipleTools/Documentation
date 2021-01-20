@@ -39,7 +39,7 @@ Note: We'd love to support team functionality inside one instance. Follow us at 
 
 ## Global Metrics - Network Dashboard
 
-If you have gone with the multisite route, you still would like to see what is happening in one place. We've build the Network Dashboard to collect data form many instances and **show metrics in one place**.  
+If you have gone with the multisite route, you still would like to see what is happening in one place. We've built the Network Dashboard to collect data form many instances and **show metrics in one place**.  
 You can set it up to collect data from all the multisite instances on your server and you can connect it to other instances on others servers as well.
 
 Find out more about the Network Dashboard here <https://disciple.tools/plugins/network-dashboard/>
@@ -56,10 +56,10 @@ A **Site Link** is needed to collaborate between instances. Here are instruction
 
 If you are hosting your own instance check out the Wordpress documentation for enabling multisite [here](https://wordpress.org/support/article/create-a-network/).
 
-If you are using a hosting service like WPEngine google "WPEngin multisite" or contact your hosting support. They will help you get it set up. Sometimes hosting services charge extra for multisites.
+If you are using a hosting service like WPEngine google "WPEngine multisite" or contact your hosting support. They will help you get it set up. Sometimes hosting services charge extra for multisites.
 
 ### Maintenance - D.T Multisite Plugin
 
-Once your multisite is set up, instance the Disciple.Tools multisite plugin: <https://disciple.tools/plugins/multisite/>.
+Once your multisite is set up, you can install the Disciple.Tools multisite plugin: <https://disciple.tools/plugins/multisite/>.
 
 It offers growing support for updating and managing all your instances at one time.
