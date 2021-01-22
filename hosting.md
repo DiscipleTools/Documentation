@@ -7,7 +7,7 @@ You know that you need to keep your data backed up. Here are some things to keep
 
 ### UpdraftPlus
 
-We recommend and use UpraftPlus for our backups. The free version does not backup Disciple.Tools data, so to use this plugin you must pay for the premium account. See UpdraftPlus for more info.
+We recommend and use UpdraftPlus for our backups. The free version does not backup Disciple.Tools data, so to use this plugin you must pay for the premium account. See UpdraftPlus for more info.
 
 ### BackWPup
 

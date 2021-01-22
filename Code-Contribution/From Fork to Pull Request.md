@@ -50,7 +50,7 @@ We're almost there! Now we need to create a local branch directly from DT's upst
 &nbsp;
 
 ### 4. Create a new local branch from upstream
-Say you want to creat a new branch for the feature you want to create or for the bug you want to fix. First, we need to make sure your forked repo has the latest stable version of the code from DiscipleTools. In other words, we need to fetch the upstream code. To do this, type:
+Say you want to create a new branch for the feature you want to create or for the bug you want to fix. First, we need to make sure your forked repo has the latest stable version of the code from DiscipleTools. In other words, we need to fetch the upstream code. To do this, type:
 
 &nbsp;
 
@@ -63,7 +63,7 @@ And then create a new branch from upstream master:
 
 &nbsp;
 
-This new branch will not contain remnants of previous commits that were merged in via the squash method. You should recieve a message like the following:
+This new branch will not contain remnants of previous commits that were merged in via the squash method. You should receive a message like the following:
 
 `Branch 'new-branch' set up to track remote branch 'master' from 'upstream'.`
 
@@ -109,4 +109,4 @@ And then push those changes to your fork:
 &nbsp;
 
 ### Done!
-Thanks for contribuiting your time and skill on this project. We greatly appreciate every line of code you send our way.
+Thanks for contributing your time and skill on this project. We greatly appreciate every line of code you send our way.
