@@ -1,4 +1,4 @@
-# D.T on Docker Setup <!-- omit in toc -->
+# D.T on Docker Setup  <!-- omit in toc -->
 
 [Docker](https://www.docker.com/) is a container system that can be used to set up all of the infrastructure needed to run a web site. The below will setup containers locally needed to run a MySQL database and an Apache + PHP web server
 
@@ -6,16 +6,16 @@ All of this will be running on a Linux virtual machine in order to duplicate as 
 
 [playlist]: https://www.youtube.com/playlist?list=PLNZnizaetELN6_2k3_iRxBhJuyavhqawE
 
-## Contents <!-- omit in toc -->
+## Contents  <!-- omit in toc -->
 
 - [Three Choices](#three-choices)
 - [Setup Docker](#setup-docker)
   1. [Install Docker](#install-docker)
   2. [Configure SSL](#configure-ssl)
   3. [Configure Docker](#configure-docker)
-     - [_Prepackaged Image_](#prepackaged-image)
-     - [_Video Walk-through_](#video-walk-through)
-     - [_Example Template_](#example-template)
+     - [*Prepackaged Image*](#prepackaged-image)
+     - [*Video Walk-through*](#video-walk-through)
+     - [*Example Template*](#example-template)
   4. [Start Wordpress](#start-wordpress)
   5. [Install Theme](#install-theme)
   6. [Install Plugins](#install-plugins)
@@ -24,17 +24,17 @@ All of this will be running on a Linux virtual machine in order to duplicate as 
 
 ## Three Choices
 
-There are currently three sets of instructions for setting up a Disciple Tools server locally using Docker. Choose the one that suites your needs best.
+There are currently three sets of instructions for setting up a Disciple Tools server locally using Docker.  Choose the one that suites your needs best.
 
-1. Prepackaged Image
+1. Prepackaged Image  
 
    <https://github.com/zdmc23/dt-docker> is the easiest of the three to install (similar effort to setting up a [LocalWP](localWP-setup.md) environment), but it is difficult to update preinstalled plugins.
 
 1. Video Walk-through
 
-   This [YouTube playlist][playlist] shows how to set up for D.T. Mobile App development on a local machine, which includes setting up the Docker server environment
+    This [YouTube playlist][playlist] shows how to set up for D.T. Mobile App development on a local machine, which includes setting up the Docker server environment
 
-   The videos do not follow these instructions exactly, but it is better to use them to help understand these instructions, instead of following them by themselves.
+    The videos do not follow these instructions exactly, but it is better to use them to help understand these instructions, instead of following them by themselves.
 
 1. Example Template
 
@@ -49,10 +49,10 @@ There are currently three sets of instructions for setting up a Disciple Tools s
 > **For Windows:**
 >
 > - When you start the Docker Desktop, **if necessary** it will provide you with additional instructions to update WSL 2 (Windows Subsystem for Linux)
->
+> 
 > - If the user account you commonly use does not have admin privileges, you can add it to the docker-users group so you can run docker directly **without** requiring “runas” (similar to “sudo” in Linux/MacOS)
 >
->   From the `Computer Management` app: open System Tools > Local Users and Groups > Groups, double click the "docker-users" group and from the "Add..." dialog add the desired user account.
+>   From the `Computer Managment` app: open System Tools > Local Users and Groups > Groups, double click the "docker-users" group and from the "Add..." dialog add the desired user account.
 >
 >   ![Configure Windows Docker Users](images/Win_Docker_Users.png)
 
@@ -71,7 +71,7 @@ Set up the self-signed SSL certificate. (The instructions are explained [here](h
 >   [Cygwin](https://www.cygwin.com/),
 >   or [Chocolatey](https://www.cygwin.com/)
 
-> **Note:** Already updated _dev.conf_ and _dockerfile_ configuration files are available from <https://github.com/cairocoder01/dt-docker>
+> **Note:** Already updated *dev.conf* and *dockerfile* configuration files are available from <https://github.com/cairocoder01/dt-docker>
 
 1. From command line in the project root directory (your copy of the Github repository) run:
 
@@ -87,40 +87,40 @@ Set up the self-signed SSL certificate. (The instructions are explained [here](h
 
 Configure Docker according to which one of the [3 approaches](#three-choices) you choose:
 
-#### **_Prepackaged Image_**
+#### ***Prepackaged Image***  
 
-1.  Download the `docker-compose.yml` file from <https://github.com/zdmc23/dt-docker> into your working directory (or clone it from GitHub)
-1.  Create a `.env` file and copy/paste the following, and then update the values:
+   1. Download the `docker-compose.yml` file from <https://github.com/zdmc23/dt-docker> into your working directory (or clone it from GitHub)
+   1. Create a `.env` file and copy/paste the following, and then update the values:
 
-    ```shell
-    DOMAIN=mydomain
-    EMAIL=noreply@mydomain
-    MYSQL_USER=wordpress
-    MYSQL_PASSWORD=wordpress
-    MYSQL_ROOT_PASSWORD=somewordpress
-    ```
+      ```shell
+      DOMAIN=mydomain
+      EMAIL=noreply@mydomain
+      MYSQL_USER=wordpress
+      MYSQL_PASSWORD=wordpress
+      MYSQL_ROOT_PASSWORD=somewordpress
+      ```
 
-    (`DOMAIN` value can be an IP address - e.g., `127.0.0.1` or `192.168.1.2`)
+      (`DOMAIN` value can be an IP address - e.g., `127.0.0.1` or `192.168.1.2`)
 
-#### **_Video Walk-through_**
+#### ***Video Walk-through***
 
 - As mentioned [above](#three-choices), the [YouTube playlist][playlist] works best to help understand these instructions, rather than following it alone.
 
-#### **_Example Template_**
+#### ***Example Template***
 
 - These instructions were originally based on <https://github.com/cairocoder01/dt-docker>
 - Download the files, or clone the repository from GitHub, to use as a template.
 
 ### Start Wordpress
 
-> **Warning:** The configuration files were up to date the last time they were edited, but _always_ make sure to double check what the most up to date versions of the software components are, or make certain to install mutually compatible versions.
+> **Warning:** The configuration files were up to date the last time they were edited, but *always* make sure to double check what the most up to date versions of the software components are, or make certain to install mutually compatible versions.
 >
-> For example, the _dockerfile_ should have up to date version numbers for Wordpress and PHP.
+> For example, the *dockerfile* should have up to date version numbers for Wordpress and PHP.
 >
 > - The first line will look like:
->   `FROM wordpress:5.4-php7.4-apache`
+> `FROM wordpress:5.4-php7.4-apache`
 > - Check <https://github.com/DiscipleTools/disciple-tools-theme/releases/latest> for which version of Wordpress disciple-tools-theme has been tested with.>
->   <br><br>
+> <br><br>
 
 1. Run `docker-compose up -d` from the project root directory (or `npm run docker-start`).
 
@@ -131,7 +131,7 @@ Configure Docker according to which one of the [3 approaches](#three-choices) yo
 
    > **For Windows:** You will need to add a “security exception” in your browser from its warning dialog (depending on browser).
 
-   > **Warning:** When you configure WordPress from “<https://localhost:44300>” or “<http://localhost:8000>” you will have to continue to use that address or reconfigure it from the …/wp-admin/options-general.php settings page to switch.
+   >**Warning:** When you configure WordPress from “<https://localhost:44300>” or “<http://localhost:8000>” you will have to continue to use that address or reconfigure it from the …/wp-admin/options-general.php settings page to switch.
 
 3. Step through the WordPress installation process.
 
@@ -142,10 +142,10 @@ Configure Docker according to which one of the [3 approaches](#three-choices) yo
    - Your Email:
    - Press “Install WordPress”
 
-> **Note:** If you cannot access DT’s home page: <https://localhost:44300/contacts> or other pages try this:
+>**Note:** If you cannot access DT’s home page: <https://localhost:44300/contacts> or other pages try this:
 >
-> - Login to _wp-admin_ and go to ![icon](images/WP_Settings_Icon.png) _Settings > Permalinks_. _You don’t need to change anything_, just click _Save_ at the bottom.  
->   (Source: <https://disciple-tools.readthedocs.io> section: [Errors on New Installation](https://disciple-tools.readthedocs.io/en/latest/Disciple_Tools_Theme/development/self_hosting.html#errors-on-new-install))
+> - Login to *wp-admin* and go to ![icon](images/WP_Settings_Icon.png) *Settings > Permalinks*. *You don’t need to change anything*, just click *Save* at the bottom.  
+> (Source: <https://disciple-tools.readthedocs.io> section: [Errors on New Installation](https://disciple-tools.readthedocs.io/en/latest/Disciple_Tools_Theme/development/self_hosting.html#errors-on-new-install))
 
 ### Install Theme
 
@@ -163,7 +163,7 @@ Configure Docker according to which one of the [3 approaches](#three-choices) yo
 > **NOTE:** If you used the [**Prepackaged Image**](#prepackaged-image) some plugins have already been installed for you.  
 > **However,** if you need to update a pre-installed plugin you must do it manually from within the container!
 
-Some production plugins are available for installation from the **Extensions** tab. For development, or unlisted plugins:
+Some production plugins are available for installation from the **Extensions** tab.  For developement, or unlisted plugins:
 
 1. Download the latest plugin zip files from below, and install plugins using these instructions: <https://wordpress.org/support/article/managing-plugins/#manual-upload-via-wordpress-admin>
 
@@ -179,10 +179,10 @@ Some production plugins are available for installation from the **Extensions** t
 
 - Edit wp-config.php to add the following values:
 
-  ```php
-  define( 'WP_DEBUG', true ); // Enable WP_DEBUG mode
-  define( 'WP_DEBUG_LOG', true ); // Enable Debug logging to the /wp-content/debug.log file
-  ```
+   ```php
+   define( 'WP_DEBUG', true ); // Enable WP_DEBUG mode
+   define( 'WP_DEBUG_LOG', true ); // Enable Debug logging to the /wp-content/debug.log file
+   ```
 
 ## Docker Multi-site Setup
 
@@ -200,7 +200,6 @@ See <https://www.wpbeginner.com/glossary/multisite/>
 1. After changes, login again and return to wp-admin.
 
 1. A new My Sites item appears in the top menu. Go to My Sites -> Network Admin -> Dashboard
-
    - Copy `disciple-tools-multisite.php` into `wp-content/plugins/disciple-tools-multisite`
 
 1. Add all of the sites as you desire.
@@ -208,6 +207,6 @@ See <https://www.wpbeginner.com/glossary/multisite/>
    - For each site you add, add the needed entry to your local hosts file.  
      For example:
 
-     ```ini
-     127.0.0.1   site1.local.disciple.tools
-     ```
+      ```ini
+      127.0.0.1   site1.local.disciple.tools
+      ```
