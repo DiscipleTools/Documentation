@@ -1,4 +1,4 @@
-# Single Site or MultiSite
+# <a name="sigle-multisite"></a>Single Site or MultiSite
 
 ## A Wordpress Tool
 
