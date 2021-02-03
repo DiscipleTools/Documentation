@@ -74,7 +74,7 @@ function dt_contact_fields( array $fields, string $post_type = ""){
 ]
 ```
 
-**Declaring Connection Fields**  
+## Declaring Connection Fields
 Connections field types need to be registered so the connection can be saved in database in the p2p table.
 
 Let's register Groups connection.
