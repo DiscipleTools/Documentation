@@ -39,11 +39,10 @@
          **e.g.** Name: D.T    Local site path: *D:\sandbox\DT   (e.g. as a Windows path)*
       2. Select “CONTINUE”
 
-   b. Choose “Custom” environment
-      1. Select the PHP Version, Web Server, and Database for the current version of D.T.
-      2. Select “CONTINUE”
+   b. Choose “Preferred” environment
+      1. Select “CONTINUE”
 
-      > ***Warning***: There is currently a bug in LocalWP when **Apache** and **PHP 7.4.1** are used together. i.e. “No input file specified” appears when logging into Wordpress. **NGINX** and **PHP 7.4.1** work together fine
+      > Select the custom option with different values if you run into an issue.
 
    c. Provide WordPress Username, Password and Email address
       - **If** you wish the site to be **Multisite**, select this under ADVANCED OPTIONS
