@@ -40,9 +40,9 @@
       2. Select “CONTINUE”
 
    b. Choose “Preferred” environment
-      1. Select “CONTINUE”
+      1. Select “CONTINUE”  
 
-      > Select the custom option with different values if you run into an issue.
+      >- Select the custom option with different values if you run into an issue.
 
    c. Provide WordPress Username, Password and Email address
       - **If** you wish the site to be **Multisite**, select this under ADVANCED OPTIONS
