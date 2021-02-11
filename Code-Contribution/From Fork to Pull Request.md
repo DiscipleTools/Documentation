@@ -35,9 +35,9 @@ To check that everything has been set up correctly, run:
 **You should see something like this:**
 &nbsp;
 
-`origin	https://github.com/prykon/disciple-tools-theme.git (fetch)`
+`origin	https://github.com/[your username]/disciple-tools-theme.git (fetch)`
 
-`origin	https://github.com/prykon/disciple-tools-theme.git (push)`
+`origin	https://github.com/[your username]/disciple-tools-theme.git (push)`
 
 `upstream	https://github.com/DiscipleTools/disciple-tools-theme.git (fetch)`
 
