@@ -12,14 +12,14 @@ Like the technical community as a whole, the DiscipleTools team and community is
 
 **Be careful in the words that you choose**. We are a community of professionals, and we conduct ourselves professionally. Be kind to others. Do not insult or put down other participants. Harassment and other exclusionary behavior aren’t acceptable. This includes, but is not limited to:
 
-- Violent threats or language directed against another person.
-- Discriminatory jokes and language.
-- Posting sexually explicit or violent material.
-- Posting (or threatening to post) other people’s personally identifying information (“doxing”).
-- Personal insults, especially those using racist or sexist terms.
-- Unwelcome sexual attention.
-- Advocating for, or encouraging, any of the above behavior.
-- Repeated harassment of others. In general, if someone asks you to stop, then stop.
+* Violent threats or language directed against another person.
+* Discriminatory jokes and language.
+* Posting sexually explicit or violent material.
+* Posting \(or threatening to post\) other people’s personally identifying information \(“doxing”\).
+* Personal insults, especially those using racist or sexist terms.
+* Unwelcome sexual attention.
+* Advocating for, or encouraging, any of the above behavior.
+* Repeated harassment of others. In general, if someone asks you to stop, then stop.
 
 **When we disagree, try to understand why**. Disagreements, both social and technical, happen all the time and DiscipleTools is no exception. It is important that we resolve disagreements and differing views constructively. Remember that we’re different. Different people have different perspectives on issues. Being unable to understand why someone holds a viewpoint doesn’t mean that they’re wrong. Don’t forget that it is human to err and blaming each other doesn’t get us anywhere. Instead, focus on helping to resolve issues and learning from mistakes.
 
@@ -27,4 +27,5 @@ This isn’t an exhaustive list of things that you can’t do. Rather, take it i
 
 Attribution
 
-Original text courtesy of the Sphinx project: https://www.sphinx-doc.org/en/master/internals/code-of-conduct.html
+Original text courtesy of the Sphinx project: [https://www.sphinx-doc.org/en/master/internals/code-of-conduct.html](https://www.sphinx-doc.org/en/master/internals/code-of-conduct.html)
+
