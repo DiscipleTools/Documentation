@@ -1,6 +1,6 @@
 # Adding menu navigation links
 
-```text
+```php
 // Hook for adding a menu item to the desktop view
 add_filter( 'desktop_navbar_menu_options', 'add_navigation_links', 35 );
 
@@ -22,4 +22,3 @@ function add_navigation_links( $tabs ) {
     return $tabs;
 }
 ```
-

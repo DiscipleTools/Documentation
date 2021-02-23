@@ -6,7 +6,7 @@ You need tell Disciple.tools that you want to track something new. Fields are de
 
 Here is an example on how to add a spoken language field on the contact:
 
-```text
+```php
 add_filter( "dt_custom_fields_settings", "dt_contact_fields", 1, 2 );
 function dt_contact_fields( array $fields, string $post_type = ""){
     //check if we are dealing with a contact
@@ -34,7 +34,7 @@ See [Field Options](fields.md) for documentation on field types.
 
 ## Adding a Tile
 
-```text
+```php
 add_filter( 'dt_details_additional_tiles', 'dt_details_additional_tiles', 10, 2 );
 public function dt_details_additional_tiles( $tiles, $post_type = "" ){
     if ( $post_type === "contacts" ){
@@ -50,7 +50,7 @@ Since the language field is already declared in the fields list with the "contac
 
 If you desire to display a field or element your own way you can also do so: Change the filter priority to determine the order of this code
 
-```text
+```php
 add_action( "dt_details_additional_section", "dt_add_section", 30, 2 );
 function dt_add_section( $section, $post_type ) {
     if ( $section === "contact_language" && $post_type === "contacts" ) {

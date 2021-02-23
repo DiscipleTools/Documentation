@@ -13,4 +13,3 @@ Query params: add `?silent=true` to disable notifications
 ## Returns
 
 Will return the same content as: [Get Post](get-post.md)
-

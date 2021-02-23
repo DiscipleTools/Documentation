@@ -4,13 +4,12 @@
 
 Requires permission: `create_{post_type}`
 
-## Parameters:
+## Parameters
 
-Body params: See [post-types-fields-format]
+Body params: See [Fields Format](post-types-fields-format.md)
 
 Query params: add `?silent=true` to disable notifications
 
 ## Returns
 
-Will return the same content as: [get-post]
-
+Will return the same content as: [Get Post](get-post.md)

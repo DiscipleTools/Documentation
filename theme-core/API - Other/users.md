@@ -2,12 +2,13 @@
 
 ## Get My User Info
 
-`Get` https://example.com/wp-json/dt/v1/user/my
+`Get` <https://example.com/wp-json/dt/v1/user/my>
 
 ### Parameters
 
 ### Returns
-```
+
+```php
 [ 
     "ID": 1,
     "user_email": "user@example.com",
@@ -18,24 +19,28 @@
 
 ## Update My User Details
 
-`POST` https://example.com/wp-json/dt/v1/user/update
+`POST` <https://example.com/wp-json/dt/v1/user/update>
 
 ### Parameters
+
 - **locale** (string) optional. The new user locale
 
 ### Returns
+
 `true` on success. WP_ERROR if not
 
 ## List Users
 
-`Get` https://example.com/wp-json/dt/v1/users/get_users
+`Get` <https://example.com/wp-json/dt/v1/users/get_users>
 
 ### Parameters
+
 - **s** (string) optional. Search user display names
 - **get_all** (string) optional. Return all the users. Default false.  "1" for true
 
 ### Returns
-```
+
+```php
 [ 
     "ID": 1,
     "name": "BOB JOE",

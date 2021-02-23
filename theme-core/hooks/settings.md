@@ -5,7 +5,7 @@ Expose settings publicly to world. To not use unless it is for setting that must
 
 Usage example:
 
-```text
+```php
 add_filter( "dt_core_public_endpoint_settings", function ( $settings ){
     $settings["login_settings"]["google"] = [ "login_url" => "https://google.com/login?redirect=https://dt-instance.com/wp-json/google-auth" ];
     return $settings;

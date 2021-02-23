@@ -17,7 +17,7 @@
 
 ## Adding fields
 
-```text
+```php
 add_filter( "dt_custom_fields_settings", "dt_contact_fields", 1, 2 );
 function dt_contact_fields( array $fields, string $post_type = ""){
     //check if we are dealing with a contact
@@ -71,7 +71,7 @@ function dt_contact_fields( array $fields, string $post_type = ""){
 * **default\_color**: \(string\). Default color for key\_select and multi\_select options. This triggers the color mode for the select field 
 * **default**: options: 
 
-  ```text
+  ```php
   [
     "option_key" => [
         "label" => "" // name of the option
@@ -89,7 +89,7 @@ Connections field types need to be registered so the connection can be saved in 
 
 Let's register Groups connection.
 
-```text
+```php
 p2p_register_connection_type(
     [
         'name'           => 'contacts_to_groups',
@@ -103,7 +103,7 @@ Here the connection is from the contacts post type to the groups post\_type.
 
 Declaring the field on the contacts post\_type looks like:
 
-```text
+```php
 $fields["groups"] = [
     "name" => __( 'Groups', 'disciple_tools' ),        
     "type" => "connection",
@@ -116,7 +116,7 @@ $fields["groups"] = [
 
 Note the direction and post\_type change on the field declaration on the group post\_type:
 
-```text
+```php
 $fields["members"] = [
     "name" => __( 'Member List', 'disciple_tools' ),
     "type" => "connection",

@@ -11,7 +11,7 @@
 
 ### Returns
 
-```text
+```js
 [ 
    comments: (array) An array of comments.
    total: (int) the number of comment in total
@@ -32,7 +32,7 @@ Query params: add `?silent=true` to disable notifications
 
 **@mentions** Mention are used to make sure a user sees a comment and gets a notification. This example @mentions user with id 46 and will display bob as the name of the user.
 
-```text
+```js
 {
     "comment": "@[bob](46) this is a mention notification"
 }
@@ -48,7 +48,7 @@ Query params: add `?silent=true` to disable notifications
 
 ### Parameters
 
-* **comment** \(string\) the body of the comment. 
+* **comment** \(string\) the body of the comment.
 
 ### Returns
 
@@ -61,4 +61,3 @@ Query params: add `?silent=true` to disable notifications
 ### Returns
 
 \(bool\) true if the contact was deleted
-

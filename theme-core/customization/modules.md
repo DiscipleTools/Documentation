@@ -16,7 +16,7 @@ The Access module focuses more on contact followup and come with fields like the
 
 ## Getting The Module List
 
-```text
+```php
 $modules = dt_get_option( "dt_post_type_modules" );
 // check if the access module is enabled
 if ( empty( $modules["access_module"]["enabled"] ) ){
@@ -30,7 +30,7 @@ if ( empty( $modules["access_module"]["enabled"] ) ){
 
 Hook into the `dt_post_type_modules` filter.
 
-```text
+```php
 add_filter( 'dt_post_type_modules', function( $modules ){
     $modules["module_key"] = [
         "name" => "Module Name",
@@ -55,7 +55,7 @@ Keep in mind:
   * the module is enabled in the settings.
   * the prerequisites are also enabled.
 
-```text
+```php
 class DT_Contacts_Access extends DT_Module_Base {
     public $post_type = "contacts";
     public $module = "access_module";
@@ -71,4 +71,3 @@ class DT_Contacts_Access extends DT_Module_Base {
     //your functions
 }
 ```
-

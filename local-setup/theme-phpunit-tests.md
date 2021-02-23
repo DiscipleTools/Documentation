@@ -4,11 +4,11 @@
 
 In the theme root within your environment \(localWP: "Open site shell" option\) run:
 
-```text
+```bash
 ./tests/install-wp-tests.sh <db-name> <db-user> <db-pass> [db-host]
 ```
 
-* `<db-name>` is the name of the db you want the run the tests in. We suggest creating a separate db form your dev db for testing. 
+* `<db-name>` is the name of the db you want the run the tests in. We suggest creating a separate db form your dev db for testing.
 * `<db-user>` Database username
 * `<db-pass>` Database password
 * `[db-host]` Database url and port. For localWP get the port from the url when opening Adminer.
@@ -26,11 +26,11 @@ Run `phpunit` form the theme root.
 
 The tests need phpunit v7. v8 and above currently don't work. You can install phpunit with:
 
-```text
+```bash
 composer global require "phpunit/phpunit=7.5.*"
 ```
 
-## Writting tests:
+## Writing tests
 
 * tests are located in the theme ./tests folder
 * unit test files need to start with 'unit-test'

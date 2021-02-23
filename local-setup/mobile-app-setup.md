@@ -42,7 +42,7 @@ If you are using **LocalWP** Setup, then there are two choices: Local Live Link 
 >
 > * Adding “—volumes” to docker-compose down will remove your previous configuration
 >
->   ```text
+>   ```bash
 >   > docker-compose down  --volumes
 >   > docker-compose up -d
 >   ```
@@ -77,7 +77,7 @@ Clone the _development_ or _master_ branch of [https://github.com/DiscipleTools/
 
 This [YouTube video](https://www.youtube.com/watch?v=gdeJHI19F7A&list=PLNZnizaetELN6_2k3_iRxBhJuyavhqawE&index=4&t=2m35) goes into much more detail.
 
-```text
+```bash
 > git clone https://github.com/DiscipleTools/disciple-tools-mobile-app.git
 > cd ./disciple-tools-mobile-app/
 > git checkout development
@@ -95,7 +95,7 @@ This is shown in this [YouTube video](https://www.youtube.com/watch?v=gdeJHI19F7
 
 From within the _disciple-tools-mobile-app_ folder:
 
-```text
+```bash
 > cd store/sagas
 > grep -rl https: . | xargs sed -i "s/https:/http:/g"
 ```
@@ -109,7 +109,7 @@ See [https://expo.io/learn](https://expo.io/learn)
 1. Expo requires NPM to be installed. Download and setup from [https://nodejs.org/](https://nodejs.org/)
 2. Use NPM to install expo:
 
-   ```text
+   ```bash
    > npm install expo-cli -–global
    ```
 
@@ -124,7 +124,7 @@ This is shown in this [YouTube video](https://www.youtube.com/watch?v=gdeJHI19F7
 
 Use the NPM install command:
 
-```text
+```bash
    > npm install
 ```
 
@@ -134,7 +134,7 @@ This may take a while
 
 Use the NPM start command:
 
-```text
+```bash
     > npm start
 ```
 

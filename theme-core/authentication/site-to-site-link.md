@@ -24,7 +24,7 @@ Here are example for creating a contact. Note we are not using the endpoints tha
 
 PHP Example
 
-```text
+```php
 function create_contact( $fields ) {
   $token = "token from the Site to Site link";
   $site_key = md5($token . "example.disciple.tools" . "example.com");
@@ -51,7 +51,7 @@ function create_contact( $fields ) {
 
 Wordpress Example
 
-```text
+```php
 function create_contact( $fields ){
   $token = "token from the Site to Site link"
   $site_key = md5( $token . "example.disciple.tools" . "example.com" );
@@ -69,7 +69,7 @@ function create_contact( $fields ){
 
 Node example
 
-```text
+```js
 import moment from 'moment'
 import request from "request-promise"
 let CryptoJS = require('crypto-js')
@@ -100,7 +100,7 @@ Here is how you add a connection type and the right permissions from you D.T plu
 
 For a list of permissions see \[\[Permissions\]\]. In the `site_link_capabilities` function you can add your own permission that you use later on in your plugin.
 
-```text
+```php
 add_filter( 'site_link_type', 'site_link_type', 10, 1 );
 add_filter( 'site_link_type_capabilities', 'site_link_capabilities', 10, 1 );
 
@@ -117,4 +117,3 @@ function site_link_capabilities( $args ){
     return $args;
 }
 ```
-

@@ -76,7 +76,7 @@ Set up the self-signed SSL certificate. \(The instructions are explained [here](
 
 1. From command line in the project root directory \(your copy of the Github repository\) run:
 
-   ```text
+   ```bash
    > openssl req -x509 -nodes -days 365 -newkey rsa:2048 -keyout server.key -out server.crt
    ```
 

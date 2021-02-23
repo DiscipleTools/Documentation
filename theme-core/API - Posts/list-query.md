@@ -19,7 +19,7 @@ Add a `-` before any of these options to return them in descending order
 
 Example:
 
-```text
+```js
 // get records assigned to me, ordered by creation date from newest to oldest
 let searchParameters = {
   assigned_to: [ 'me' ],
@@ -37,7 +37,7 @@ Parameters: \(array\) of presets or ids.
 
 Example:
 
-```text
+```js
 // get records assigned to me
 let searchParameters = {
   assigned_to: [ 'me' ]
@@ -59,7 +59,7 @@ Parameters: \(array\) of keys.
 
 Example:
 
-```text
+```js
 // get contacts that have the 'Has Bible' or 'Reading Bible' milestones and that are at the 'Meeting Scheduled' stage.
 let searchParameters = {
   milestones: [ 'milestone_has_bible', 'milestone_reading_bible' ],
@@ -67,7 +67,7 @@ let searchParameters = {
 }
 ```
 
-```text
+```js
 // get contacts that have the 'Has Bible' milestone but not the 'Reading Bible' milestone.
 let searchParameters = {
   milestones: [ 'milestone_has_bible', '-milestone_reading_bible' ],
@@ -84,7 +84,7 @@ Parameters \(array\) of IDs
 
 Example:
 
-```text
+```js
 // get contacts subassigned to contact 93. Exclude contacts subassigned to contact 23
 let searchParameters = {
   subassinged: [ 93, -23 ]
@@ -93,7 +93,7 @@ let searchParameters = {
 
 Example:
 
-```text
+```js
 // get contacts assigned_to user 22 **OR** subassigned to contact 93
 let searchParameters = {
   [ assigned_to => [ 22 ], subassinged: [ 93 ] ]
@@ -108,7 +108,7 @@ Parameters: \(array\) of location\_grid IDs
 
 Example:
 
-```text
+```js
 // get contacts in location with location_grid (in the dt_location_grid table grid_id) id 123456
 // but exclude location 5678
 let searchParameters = {
@@ -126,7 +126,7 @@ Parameters: **start** and **end**
 
 Example:
 
-```text
+```js
 // get the records created between in 2018
 let searchParameters = {
   created_on : {
@@ -151,7 +151,7 @@ Parameters \(array\). "1" for true, "0" for false
 
 Example:
 
-```text
+```js
 // get records that need an update
 let searchParameters = {
   requires_update: [ "1" ]
@@ -172,7 +172,7 @@ Field examples:
 
 Example:
 
-```text
+```js
 // get records that are baptism generation greater than 4
 let searchParameters = {
   baptism_generation => [ "equality" => ">", "number" => 4 ],
@@ -190,7 +190,7 @@ Parameters: \(array\) or text te search for.
 
 Examples:
 
-```text
+```js
 // search phone numbers matching 123 anywhere in the number
 let searchParameters = {
   contact_phone: ["123"]
@@ -213,7 +213,7 @@ let searchParameters = {
 
 Example:
 
-```text
+```js
 // search for "Bob"
 let searchParameters = {
   text: "Bob"
@@ -228,7 +228,7 @@ Note that the query is sent in the fields array and thath the structure is a bit
 
 Examples:
 
-```text
+```js
 // records that are of field `type` `personal` AND coached by me
 let searchParameters = {
   fields: [
@@ -244,7 +244,7 @@ let searchParameters = {
 }
 ```
 
-```text
+```js
 // records that are of type "personal" OR coached by me
 let searchParameters = {
   fields: [
@@ -258,7 +258,7 @@ let searchParameters = {
 }
 ```
 
-```text
+```js
 // records that are ( ( type "personal" AND coached_by me ) OR ( assigned to me and active ) ) AND shared with me
 let searchParameters = {
   fields: [
@@ -290,7 +290,7 @@ let searchParameters = {
 
 Example:
 
-```text
+```js
 //Get the 30 most recently viewed posts by the user making the request. 
 let searchParameters = {
   dt_recent: true
@@ -303,7 +303,7 @@ let searchParameters = {
 
 Example:
 
-```text
+```js
 // get second page of records with each page having 100. 
 let searchParameters = {
   offset: 100,
@@ -317,9 +317,9 @@ let searchParameters = {
 
 Example:
 
-```text
+```js
 let searchParameters = {
-  fields_to_return = [ 'group_status', 'group_type', 'member_count', 'leaders', 'location_grid', 'last_modified', 'requires_updated' ]
+  fields_to_return: [ 'group_status', 'group_type', 'member_count', 'leaders', 'location_grid', 'last_modified', 'requires_updated' ]
 }
 ```
 
@@ -327,7 +327,7 @@ let searchParameters = {
 
 After building the filter parameters, we need to transform the searchParameters object in the query parameters string. The query string needs to be the same format that jQuery.param\(\) outputs. See [here](https://stackoverflow.com/questions/22582795/jquery-param-alternative-for-javascript) for a plain js alternative
 
-```text
+```js
 let searchParameters = {
   overall_status: ["active", "-closed"] // -closed filters out the closed records
   seeker_path: ["none"]
@@ -345,7 +345,7 @@ let queryString = `https://example.com/wp-json/dt-posts/v2/contacts/?${queryPara
 
 ### Returns
 
-```text
+```js
 //for contacts
 {
   posts: [
@@ -363,4 +363,3 @@ let queryString = `https://example.com/wp-json/dt-posts/v2/contacts/?${queryPara
   total: 34 // the total number of groups available to page (see offset)
 }
 ```
-

@@ -4,14 +4,14 @@
 
 Requires permission: `access_{post_type}`
 
-### Returns
+## Returns
 
 \(json object\): the contact. Each field type will show in a different way:
 
 * **"ID"**
-* **"title"**:"Jonh Doe",
+* **"title"**:"John Doe",
 * **"created\_date"**:"2018-06-05 16:07:16",
-* **"last\_modified"**:"1552987784",  //date the contact has last been modifield
+* **"last\_modified"**:"1552987784",  //date the contact has last been modified
 * **text fields**
 
 ```text
@@ -20,7 +20,7 @@ Requires permission: `access_{post_type}`
 
 * **multi\_select fields**
 
-  ```text
+  ```json
   "field_key": [ 
     "option_key", 
     "option_key",
@@ -30,7 +30,7 @@ Requires permission: `access_{post_type}`
 
 * **key\_select fields**
 
-  ```text
+  ```json
   "field_key": {
    "key":"option_key",
    "label":"option_label"
@@ -39,7 +39,7 @@ Requires permission: `access_{post_type}`
 
 * **connection fields**
 
-  ```text
+  ```json
   "field_key": [ 
    { 
        "ID":{post_id},
@@ -54,22 +54,22 @@ Requires permission: `access_{post_type}`
 
 * **date fields**
 
-  ```text
+  ```json
   "field_key": {
     timestamp: "1552953600",  //unix timestamp and the date
     formatted: "March 19, 2019" // date formatted base on selected date format in WP settings
   }
   ```
 
-
 ## Return Example
-```
+
+```json
 {
 "ID":72,
 "title":"Mojiz Chra\u00efbi",
 "created_date":"2018-06-05 16:07:16",
 "last_modified":"1552987784",
-geonames":[
+"geonames":[
     {"id":123456,"label":"World"}
 ],
 "groups":[
@@ -105,6 +105,6 @@ geonames":[
     "milestone_reading_bible"
 ],
 "baptism_generation":"0",
-"baptism_date": {timestamp: "1552953600", formatted: "March 19, 2019"}
+"baptism_date": {"timestamp": "1552953600", "formatted": "March 19, 2019"}
 }
 ```

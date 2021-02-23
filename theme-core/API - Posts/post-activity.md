@@ -20,7 +20,7 @@
 
 Activity list format:
 
-```text
+```js
 [
   {
     "meta_key":"overall_status",
@@ -47,7 +47,7 @@ Activity list format:
 
 Activity list format:
 
-```text
+```json
 {
   "meta_key":"overall_status",
   "gravatar":"http:\/\/2.gravatar.com\/avatar\/id?s=16&d=mm&r=g",
@@ -58,4 +58,3 @@ Activity list format:
   "histid":"179" // the ID of the activity
 }
 ```
-

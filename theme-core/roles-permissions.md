@@ -25,13 +25,13 @@ Let's build out the Dispatcher role.
 
 First we hook into the `dt_set_roles_and_permissions` filter to declare role and set the capabilities.
 
-```text
+```php
 add_filter( 'dt_set_roles_and_permissions', [ $this, 'dt_set_roles_and_permissions' ], 10, 1 );
 public function dt_set_roles_and_permissions( $expected_roles ){
 
     $expected_roles['dispatcher'] = [
         "label" => __( "Dispatcher", "disciple_tools" ), // the displayed name of the role
-        "descriptions" => "Monitor new D.T contacts and assign the to waiting Multipliers", //discription shown to help the admin choose what role to assign a user.
+        "descriptions" => "Monitor new D.T contacts and assign the to waiting Multipliers", //description shown to help the admin choose what role to assign a user.
         "permissions" => [
             'dt_all_access_contacts' => true, //gives permission to all contacts with the 'access' type.
             'view_project_metrics' => true, //view all poject chart is the metrics tab
@@ -45,7 +45,7 @@ public function dt_set_roles_and_permissions( $expected_roles ){
 
 If you want to add capabilities to an existing role from your plugin make sure the filter priority is higher that the number user when declaring the role in the first place. Let's add a capability to the dispatcher role. They priority used by the filter when declaring it was 10. So we'll used 20.
 
-```text
+```php
 add_filter( 'dt_set_roles_and_permissions', [ $this, 'dt_set_roles_and_permissions' ], 20, 1 );
 public function dt_set_roles_and_permissions( $expected_roles ){
     //check if the role is declared. You don't need to reset the label and description.
@@ -65,7 +65,7 @@ This filter is called when querying a list of records. Here you can expand or re
 
 Example, giving the dispatcher permission to all contacts of type 'access':
 
-```text
+```php
 public static function dt_filter_access_permissions( $permissions, $post_type ){
     if ( $post_type === "contacts" ){
         //give user permission to all contacts af type 'access'
@@ -83,7 +83,7 @@ public static function dt_filter_access_permissions( $permissions, $post_type ){
 
 Example, giving the Dispatcher permission to view any contact of type 'access':
 
-```text
+```php
 add_filter( "dt_can_view_permission", [ $this, 'can_view_permission_filter' ], 10, 3 );
 public function can_view_permission_filter( $has_permission, $post_id, $post_type ){
     if ( $post_type === "contacts" ){
@@ -104,7 +104,7 @@ public function can_view_permission_filter( $has_permission, $post_id, $post_typ
 
 Example, giving the Dispatcher permission to update any contact of type 'access':
 
-```text
+```bash
 add_filter( "dt_can_update_permission", [ $this, 'can_update_permission_filter' ], 10, 3 );
 public function can_update_permission_filter( $has_permission, $post_id, $post_type ){
     if ( $post_type === "contacts" ){
