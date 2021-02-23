@@ -1,6 +1,8 @@
+# Roles and Permissions
+
 Documentation for theme version 1.0.0 or greater
 
-# Permissions
+## Permissions
 
 Permissions guide what a user can and cannot see and what records the user has access to.
 What Roles a user has determines what a user is permitted to do.
@@ -19,7 +21,7 @@ An example is the Dispatcher role has has permission to see and update all acces
 The access module looks for users which that capability and gives them access to all contacts of type 'access'.
 
 
-# Roles
+## Roles
 Since version 1.0.0 Roles are modular. The theme sets declares a set of roles and their capabilities. Plugin can add roles and modify capabilities on all roles.
 
 Let's build out the Dispatcher role.
@@ -55,7 +57,7 @@ public function dt_set_roles_and_permissions( $expected_roles ){
 }
 ```
 
-# Linking capabilities to permissions
+## Linking capabilities to permissions
 
 ### In listing records
 

@@ -1,4 +1,5 @@
 # Setting Up the Build Process
+
 D.T Uses gulp to compile and minify the css and javascript. If you will be contributing styling or JS changes you will need to use gulp.
   - First you need to have Node.js installed on your computer. You can download and install Node.js from [here](https://nodejs.org/)
   - Second from your terminal enter the Disciple Tools theme folder.

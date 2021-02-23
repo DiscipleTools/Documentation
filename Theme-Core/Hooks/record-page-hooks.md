@@ -1,3 +1,5 @@
+# Record Page Hooks
+
 **dt_record_top_full_with** Action  
 Section for full width content above the details and comment tiles  
 Parameters 2: string $post_type, array $post

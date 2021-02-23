@@ -1,3 +1,5 @@
+#Style Guide
+
 ## Branding
 
 Please use "Disciple.Tools" or "D.T" and avoid "Disciple Tools", or "DiscipleTools" or other variants.
