@@ -2,6 +2,8 @@
 
 <!-- Here is the (community maintained) documentation for developers and related technical community  for Disciple.Tools -->
 
+This documentation is better viewed at [https://developers.disciple.tools/](https://developers.disciple.tools/) 
+
 ## Introduction
 
 Welcome to the D.T developer documentation. The heart of Disciple Tools as an open source project is to empower ministries and disciple makers to move at the pace of God's vision for them. Technology can help only if it can be made to serve the vision.
