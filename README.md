@@ -11,9 +11,9 @@ Our ambition is to build disciple making software that unleashes your obedience 
 Here you will find documentation for:
 
 * [Setting up your local environment](local-setup/)
-* [Developing and customizing the D.T theme](https://github.com/DiscipleTools/Documentation/tree/40f0334f6d13cde72cff7a7157354367599f7ff9/Theme-Core/README.md)
-* [Contributing](https://github.com/DiscipleTools/Documentation/tree/40f0334f6d13cde72cff7a7157354367599f7ff9/Code-Contribution/README.md)
-* [Hosting](https://github.com/DiscipleTools/Documentation/tree/40f0334f6d13cde72cff7a7157354367599f7ff9/Hosting/README.md)
+* [Developing and customizing the D.T theme](local-setup/)
+* [Contributing](code-contribution/)
+* [Hosting](hosting/)
 
 ## Start Here
 

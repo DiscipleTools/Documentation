@@ -1,4 +1,4 @@
-# list-posts-compact
+# Posts in Typeaheads
 
 `GET` [https://example.com/wp-json/dt-posts/v2/{post\_type}/compact/](https://example.com/wp-json/dt-posts/v2/{post_type}/compact/)
 

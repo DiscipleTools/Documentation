@@ -1,4 +1,4 @@
-# Post-Activity
+# Post Activity
 
 ## Get Activity
 

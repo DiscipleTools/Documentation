@@ -6,11 +6,11 @@ Requires permission: `create_{post_type}`
 
 ## Parameters:
 
-Body params: See \[\[Post Types Fields Format\]\]
+Body params: See [post-types-fields-format]
 
 Query params: add `?silent=true` to disable notifications
 
 ## Returns
 
-Will return the same content as: \[\[Get Post\]\]
+Will return the same content as: [get-post]
 

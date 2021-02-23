@@ -4,7 +4,7 @@
 
 ## Returns
 
-\(array\) An array of uses ids.
+\(array\) An array of user ids.
 
 Shares list format:
 

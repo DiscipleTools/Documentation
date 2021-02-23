@@ -6,11 +6,11 @@ Requires permission: `update_any_{post_type}` or the record to be shared with th
 
 ## Parameters
 
-Body params: See \[\[Post Types Fields Format\]\]
+Body params: See [Post Types Fields Format](post-types-fields-format.md)
 
 Query params: add `?silent=true` to disable notifications
 
 ## Returns
 
-Will return the same content as: \[\[Get Post\]\]
+Will return the same content as: [Get Post](get-post.md)
 

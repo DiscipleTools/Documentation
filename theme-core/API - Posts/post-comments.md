@@ -40,7 +40,7 @@ Query params: add `?silent=true` to disable notifications
 
 ### Returns
 
-\(object\) The default wordpress comment. See [https://codex.wordpress.org/Function\_Reference/get\_comment](https://codex.wordpress.org/Function_Reference/get_comment)
+\(object\) The default wordpress comment. See [https://developer.wordpress.org/reference/functions/get_comment/](https://developer.wordpress.org/reference/functions/get_comment/)
 
 ## Update a comment
 
@@ -52,7 +52,7 @@ Query params: add `?silent=true` to disable notifications
 
 ### Returns
 
-\(object\) The default wordpress comment. See [https://codex.wordpress.org/Function\_Reference/get\_comment](https://codex.wordpress.org/Function_Reference/get_comment)
+\(object\) The default wordpress comment. See [https://developer.wordpress.org/reference/functions/get_comment/](https://developer.wordpress.org/reference/functions/get_comment/)
 
 ## Delete a comment
 
