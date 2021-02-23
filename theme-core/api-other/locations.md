@@ -24,7 +24,7 @@ Requires permission: `access_{post_type}`
 
 #### Returns
 
-```json
+```javascript
 {
   location_grid: [
    {
@@ -36,3 +36,4 @@ Requires permission: `access_{post_type}`
   total: 339 // the total number of location_grid_ids matching the search
 }
 ```
+

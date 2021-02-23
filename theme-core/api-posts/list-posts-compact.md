@@ -10,7 +10,7 @@ Requires permission: `access_{post_type}`
 
 ## Returns
 
-```js
+```javascript
 {
   posts: [
    {
@@ -24,3 +24,4 @@ Requires permission: `access_{post_type}`
   total: 339 // the total number of posts matching the search
 }
 ```
+

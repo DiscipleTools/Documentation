@@ -22,3 +22,4 @@ function add_navigation_links( $tabs ) {
     return $tabs;
 }
 ```
+

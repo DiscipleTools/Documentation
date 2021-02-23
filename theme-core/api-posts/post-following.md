@@ -8,8 +8,9 @@
 
 Shares list format:
 
-```js
+```javascript
 [
   1, 2, 34
 ]
 ```
+

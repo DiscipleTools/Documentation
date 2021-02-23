@@ -4,9 +4,9 @@ You know that you need to keep your data backed up. Here are some things to keep
 
 ## UpdraftPlus
 
-We recommend and use [UpdraftPlus](https://updraftplus.com/) for our backups.
-Multisite support is only available on the paid version.
+We recommend and use [UpdraftPlus](https://updraftplus.com/) for our backups. Multisite support is only available on the paid version.
 
 ## BackWPup
 
 We’ve also tested BackWPup: [https://wordpress.org/plugins/backwpup/](https://wordpress.org/plugins/backwpup/). This plugin is free but more difficult to set up.
+

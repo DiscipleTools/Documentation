@@ -71,3 +71,4 @@ class DT_Contacts_Access extends DT_Module_Base {
     //your functions
 }
 ```
+

@@ -20,7 +20,7 @@ Requires permission: `access_{post_type}`
 
 * **multi\_select fields**
 
-  ```json
+  ```javascript
   "field_key": [ 
     "option_key", 
     "option_key",
@@ -30,7 +30,7 @@ Requires permission: `access_{post_type}`
 
 * **key\_select fields**
 
-  ```json
+  ```javascript
   "field_key": {
    "key":"option_key",
    "label":"option_label"
@@ -39,7 +39,7 @@ Requires permission: `access_{post_type}`
 
 * **connection fields**
 
-  ```json
+  ```javascript
   "field_key": [ 
    { 
        "ID":{post_id},
@@ -54,7 +54,7 @@ Requires permission: `access_{post_type}`
 
 * **date fields**
 
-  ```json
+  ```javascript
   "field_key": {
     timestamp: "1552953600",  //unix timestamp and the date
     formatted: "March 19, 2019" // date formatted base on selected date format in WP settings
@@ -63,7 +63,7 @@ Requires permission: `access_{post_type}`
 
 ## Return Example
 
-```json
+```javascript
 {
 "ID":72,
 "title":"Mojiz Chra\u00efbi",
@@ -108,3 +108,4 @@ Requires permission: `access_{post_type}`
 "baptism_date": {"timestamp": "1552953600", "formatted": "March 19, 2019"}
 }
 ```
+

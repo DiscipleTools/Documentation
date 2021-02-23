@@ -69,7 +69,7 @@ function dt_contact_fields( array $fields, string $post_type = ""){
 **Extra parameters for key\_select and multi\_select field**
 
 * **default\_color**: \(string\). Default color for key\_select and multi\_select options. This triggers the color mode for the select field 
-* **default**: options: 
+* **default**: options:
 
   ```php
   [

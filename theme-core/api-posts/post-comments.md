@@ -11,7 +11,7 @@
 
 ### Returns
 
-```js
+```javascript
 [ 
    comments: (array) An array of comments.
    total: (int) the number of comment in total
@@ -32,7 +32,7 @@ Query params: add `?silent=true` to disable notifications
 
 **@mentions** Mention are used to make sure a user sees a comment and gets a notification. This example @mentions user with id 46 and will display bob as the name of the user.
 
-```js
+```javascript
 {
     "comment": "@[bob](46) this is a mention notification"
 }
@@ -40,7 +40,7 @@ Query params: add `?silent=true` to disable notifications
 
 ### Returns
 
-\(object\) The default wordpress comment. See [https://developer.wordpress.org/reference/functions/get_comment/](https://developer.wordpress.org/reference/functions/get_comment/)
+\(object\) The default wordpress comment. See [https://developer.wordpress.org/reference/functions/get\_comment/](https://developer.wordpress.org/reference/functions/get_comment/)
 
 ## Update a comment
 
@@ -52,7 +52,7 @@ Query params: add `?silent=true` to disable notifications
 
 ### Returns
 
-\(object\) The default wordpress comment. See [https://developer.wordpress.org/reference/functions/get_comment/](https://developer.wordpress.org/reference/functions/get_comment/)
+\(object\) The default wordpress comment. See [https://developer.wordpress.org/reference/functions/get\_comment/](https://developer.wordpress.org/reference/functions/get_comment/)
 
 ## Delete a comment
 
@@ -61,3 +61,4 @@ Query params: add `?silent=true` to disable notifications
 ### Returns
 
 \(bool\) true if the contact was deleted
+

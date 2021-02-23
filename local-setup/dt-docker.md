@@ -142,7 +142,7 @@ Configure Docker according to which one of the [3 approaches](dt-docker.md#three
 
 > **Note:** If you cannot access DT’s home page: [https://localhost:44300/contacts](https://localhost:44300/contacts) or other pages try this:
 >
-> * Login to _wp-admin_ and go to ![icon](../.gitbook/assets/WP_Settings_Icon.png) _Settings &gt; Permalinks_. _You don’t need to change anything_, just click _Save_ at the bottom.  
+> * Login to _wp-admin_ and go to ![icon](../.gitbook/assets/WP_Settings_Icon.png) _Settings &gt; Permalinks_. _You don’t need to change anything_, just click _Save_ at the bottom.
 >
 >   \(Source: [https://disciple-tools.readthedocs.io](https://disciple-tools.readthedocs.io) section: [Errors on New Installation](https://disciple-tools.readthedocs.io/en/latest/Disciple_Tools_Theme/development/self_hosting.html#errors-on-new-install)\)
 

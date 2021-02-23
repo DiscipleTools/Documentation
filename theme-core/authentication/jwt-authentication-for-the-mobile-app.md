@@ -1,7 +1,6 @@
 # JWT-Authentication-for-the-mobile-app
 
-The mobile app plugin includes JWT authentication.
-Some hosting setups require additional configuration.
+The mobile app plugin includes JWT authentication. Some hosting setups require additional configuration.
 
 For full documentation [https://github.com/Tmeister/wp-api-jwt-auth/blob/develop/README.md](https://github.com/Tmeister/wp-api-jwt-auth/blob/develop/README.md)
 
@@ -11,31 +10,28 @@ Here is the basic usage:
 
 When the plugin is activated, a new namespace is added.
 
-
-```
+```text
 /jwt-auth/v1
 ```
 
-
 Also, two new endpoints are added to this namespace.
 
-
-| Endpoint                              | HTTP Verb |
-| ------------------------------------- | --------- |
-| */wp-json/jwt-auth/v1/token*          | POST      |
-| */wp-json/jwt-auth/v1/token/validate* | POST      |
+| Endpoint | HTTP Verb |
+| :--- | :--- |
+| _/wp-json/jwt-auth/v1/token_ | POST |
+| _/wp-json/jwt-auth/v1/token/validate_ | POST |
 
 ## Usage
+
 ### /wp-json/jwt-auth/v1/token
 
 This is the entry point for the JWT Authentication.
 
-Validates the user credentials, *username* and *password*, and returns a token to use in a future request to the API if the authentication is correct or error if the authentication fails.
+Validates the user credentials, _username_ and _password_, and returns a token to use in a future request to the API if the authentication is correct or error if the authentication fails.
 
 #### Sample request using AngularJS
 
 ```javascript
-
 ( function() {
   var app = angular.module( 'jwtAuth', [] );
 
@@ -59,13 +55,11 @@ Validates the user credentials, *username* and *password*, and returns a token t
   } );
 
 } )();
-
-
 ```
 
 Success response from the server:
 
-```json
+```javascript
 {
     "token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9qd3QuZGV2IiwiaWF0IjoxNDM4NTcxMDUwLCJuYmYiOjE0Mzg1NzEwNTAsImV4cCI6MTQzOTE3NTg1MCwiZGF0YSI6eyJ1c2VyIjp7ImlkIjoiMSJ9fX0.YNe6AyWW4B7ZwfFE5wJ0O6qQ8QFcYizimDmBy6hCH_8",
     "user_display_name": "admin",
@@ -76,7 +70,7 @@ Success response from the server:
 
 Error response from the server:
 
-```json
+```javascript
 {
     "code": "jwt_auth_failed",
     "data": {
@@ -118,7 +112,7 @@ If the token is valid, the API call flow will continue as always.
 
 **Sample Headers**
 
-```
+```text
 POST /resource HTTP/1.1
 Host: server.example.com
 Authorization: Bearer mF_s9.B5f-4.1JqM
@@ -130,7 +124,7 @@ If the token is invalid an error will be returned. Here are some samples of erro
 
 **Invalid Credentials**
 
-```json
+```javascript
 [
   {
     "code": "jwt_auth_failed",
@@ -144,7 +138,7 @@ If the token is invalid an error will be returned. Here are some samples of erro
 
 **Invalid Signature**
 
-```json
+```javascript
 [
   {
     "code": "jwt_auth_invalid_token",
@@ -158,7 +152,7 @@ If the token is invalid an error will be returned. Here are some samples of erro
 
 **Expired Token**
 
-```json
+```javascript
 [
   {
     "code": "jwt_auth_invalid_token",
@@ -176,7 +170,7 @@ This is a simple helper endpoint to validate a token; you only will need to make
 
 Valid Token Response:
 
-```json
+```javascript
 {
   "code": "jwt_auth_valid_token",
   "data": {
@@ -184,3 +178,4 @@ Valid Token Response:
   }
 }
 ```
+

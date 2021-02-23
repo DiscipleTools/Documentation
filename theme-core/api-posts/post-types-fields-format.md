@@ -1,13 +1,12 @@
 # Fields Format
 
-Fields have different types. Each type will need it's own syntax.
-The list of fields will changed based on your D.T instance. For a list of available fields have a look at: the field explorer tool under Utilities in your wp-admin.
+Fields have different types. Each type will need it's own syntax. The list of fields will changed based on your D.T instance. For a list of available fields have a look at: the field explorer tool under Utilities in your wp-admin.
 
 ## text
 
 Field examples:
 
-- title
+* title
 
 ```php
 fields = [
@@ -19,7 +18,7 @@ fields = [
 
 Field examples:
 
-- update_required
+* update\_required
 
 ```php
 fields = [
@@ -27,12 +26,12 @@ fields = [
 ]
 ```
 
-## key_select
+## key\_select
 
 Field examples:
 
-- overall_status
-- seeker_path
+* overall\_status
+* seeker\_path
 
 The key is used to set save the field instead of the value.
 
@@ -42,13 +41,13 @@ fields = [
 ]
 ```
 
-## multi_select
+## multi\_select
 
 Field examples:
 
-- sources
-- tags
-- milestones
+* sources
+* tags
+* milestones
 
 ```php
 $fields = [
@@ -64,17 +63,17 @@ $fields = [
 
 ## Contact Fields
 
-- contact_phone
-- contact_email
-- contact_address
-- contact_facebook
-- etc
+* contact\_phone
+* contact\_email
+* contact\_address
+* contact\_facebook
+* etc
 
 There are three actions you can take:
 
-- Create, if you don't include a key, a new field will be created
-- Update, include the key and value to update
-- Delete, including the key and the delete flag will remove the Phone number
+* Create, if you don't include a key, a new field will be created
+* Update, include the key and value to update
+* Delete, including the key and the delete flag will remove the Phone number
 
 ```php
 $fields = [
@@ -98,7 +97,7 @@ $fields = [
 
 ## date
 
-- baptism_date
+* baptism\_date
 
 ```php
 $fields = [
@@ -106,9 +105,9 @@ $fields = [
 ]
 ```
 
-## user_select
+## user\_select
 
-- assigned_to //int, a user id
+* assigned\_to //int, a user id
 
 ```php
 $fields = [
@@ -118,11 +117,11 @@ $fields = [
 
 ## number
 
-- quick_button_no_answer
-- quick_button_contact_established
-- quick_button_meeting_scheduled
-- quick_button_meeting_complete
-- quick_button_no_show
+* quick\_button\_no\_answer
+* quick\_button\_contact\_established
+* quick\_button\_meeting\_scheduled
+* quick\_button\_meeting\_complete
+* quick\_button\_no\_show
 
 ```php
 $fields = [
@@ -132,7 +131,7 @@ $fields = [
 
 ## location
 
-- location_grid
+* location\_grid
 
 ```php
 $fields = [
@@ -142,17 +141,16 @@ $fields = [
 
 ## connection
 
-- groups
-- people_groups
-- baptized_by
-- baptized
-- coaching
-- coached_by
-- subassigned
-- relation
+* groups
+* people\_groups
+* baptized\_by
+* baptized
+* coaching
+* coached\_by
+* subassigned
+* relation
 
-Let's say our contact is connected to locations with IDs 1, 3 and 43.
-This example will add the location with ID 1 and will remove the location with ID 43. The contact will then be connected to locations 1 and 3
+Let's say our contact is connected to locations with IDs 1, 3 and 43. This example will add the location with ID 1 and will remove the location with ID 43. The contact will then be connected to locations 1 and 3
 
 ```php
 $fields = [
@@ -179,11 +177,11 @@ $fields = [
 ]
 ```
 
-## post_user_meta
+## post\_user\_meta
 
 Meta for a post for a specific user. This meta is only accessible by the user who created it and is stored in its own table.
 
-- reminders
+* reminders
 
 ```php
 $fields = [
@@ -196,7 +194,6 @@ $fields = [
   ]
 ]
 ```
-
 
 ## Fields example together
 
@@ -218,3 +215,4 @@ $fields = [
 ]
 DT_Posts::create_post( 'contacts', $fields )
 ```
+

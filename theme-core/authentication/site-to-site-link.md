@@ -71,7 +71,7 @@ function create_contact( $fields ){
 
 Node example
 
-```js
+```javascript
 import moment from 'moment'
 import request from "request-promise"
 let CryptoJS = require('crypto-js')
@@ -119,3 +119,4 @@ function site_link_capabilities( $args ){
     return $args;
 }
 ```
+

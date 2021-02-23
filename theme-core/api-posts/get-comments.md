@@ -30,9 +30,10 @@ Replace `example.com` with your domain Replace `{contact||group}` with either `c
 
 **Return Example**
 
-```js
+```javascript
 [ 
  { comment_ID: "2431", comment_post_ID: "962", comment_author: "ME" ... },
  { comment_ID: "2432", comment_post_ID: "962", comment_author: "You" ... }
 ]
 ```
+

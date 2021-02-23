@@ -12,7 +12,7 @@ Requires permission: `view_any_{post_type}` or post is shared with user.
 
 Example format:
 
-```js
+```javascript
 [
   {
     "id":"10", // the id of the share
