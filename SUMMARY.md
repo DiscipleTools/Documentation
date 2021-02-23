@@ -1,4 +1,6 @@
 # Table of contents
+
+* [Disciple.Tools Technical Documentation](HOME.md)
 * [Theme Core](theme-core/README.md)
   * [API - Posts](theme-core/api-posts/README.md)
     * [List of Endpoints](theme-core/api-posts/post-endpoints.md)

@@ -18,7 +18,7 @@ The theme is hosted on GitHub [here](https://github.com/DiscipleTools/disciple-t
 
 If you are interested in contributing to the theme a good place to start would be to browse our [“Help Wanted”](https://github.com/DiscipleTools/disciple-tools-theme/issues?q=is%3Aopen+is%3Aissue+label%3A%22help+wanted%22) issues.
 
-Clone the Repo and submit a Pull Request when your feature is ready. See the [helpful instructions](code-contribution/from-fork-to-pull-request.md).  Be sure to follow the [contribution guidelines](code-contribution/contribution-guidelines.md).
+Clone the Repo and submit a Pull Request when your feature is ready. See the [helpful instructions](code-contribution/from-fork-to-pull-request.md). Be sure to follow the [contribution guidelines](code-contribution/contribution-guidelines.md).
 
 [Here](local-setup/) is documentation for getting set up in your development environment set up.
 
@@ -37,3 +37,4 @@ We encourage you to check it out and start developing from there.
 ### Code of Conduct
 
 Please read our [Code of Conduct](code-of-conduct.md)
+
