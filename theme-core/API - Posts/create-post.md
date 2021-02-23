@@ -1,4 +1,4 @@
-# Create-Post
+# Create Post
 
 `POST` [https://example.com/wp-json/dt-posts/v2/{post\_type}/](https://example.com/wp-json/dt-posts/v2/{post_type}/)
 

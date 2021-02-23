@@ -16,6 +16,8 @@ note: both domains need to be HTTPS. You can disable this for local testing by c
 
 Since you are not connecting to another D.T instance, under **DT Site** choose 'No, connection for a non-Disciple Tools system.'.
 
+See more documentation on creating a site link [here](https://disciple.tools/user-docs/getting-started-info/admin/site-links/)
+
 ### Remote authentication
 
 We'll use the token and the 2 domains we just defined to authenticate with D.T form another server.
@@ -98,7 +100,7 @@ create_contact = (fields)=>{
 
 Here is how you add a connection type and the right permissions from you D.T plugin.
 
-For a list of permissions see \[\[Permissions\]\]. In the `site_link_capabilities` function you can add your own permission that you use later on in your plugin.
+For a list of permissions see [Permissions](../capabilities.md). In the `site_link_capabilities` function you can add your own permission that you use later on in your plugin.
 
 ```php
 add_filter( 'site_link_type', 'site_link_type', 10, 1 );

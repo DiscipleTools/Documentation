@@ -1,4 +1,4 @@
-# Update-Post
+# Update Post
 
 `Post` [https://example.com/wp-json/dt-posts/v2/{post\_type}/{post\_id}/](https://example.com/wp-json/dt-posts/v2/{post_type}/{post_id}/)
 
