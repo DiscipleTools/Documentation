@@ -1,4 +1,4 @@
-#List Query
+# List Query
 
 ## Get a list of contacts, groups or another post type, with filtering and sorting parameters
 
@@ -292,7 +292,7 @@ let searchParameters = {
 ```
 
 
-# Bringing it all together
+## Bringing it all together
 After building the filter parameters, we need to transform the searchParameters object in the query parameters string. The query string needs to be the same format that jQuery.param() outputs. See [here](https://stackoverflow.com/questions/22582795/jquery-param-alternative-for-javascript) for a plain js alternative
 
 ```
@@ -311,7 +311,7 @@ let queryParametersString = jQuery.param(searchParameters)
 let queryString = `https://example.com/wp-json/dt-posts/v2/contacts/?${queryParametersString}`;
 ```
 
-## Returns
+### Returns
 ```
 //for contacts
 {

@@ -12,9 +12,8 @@ Here you will find documentation for:
 
 - [Setting up your local environment](Local-Setup)
 - [Developing and customizing the D.T theme](Theme-Core)
-- Building D.T plugins and extensions
+- [Contributing](Code-Contribution)
 - [Hosting](Hosting)
-- Translation <!-- [Translation](translation.md) -->
 
 ## Start Here
 
@@ -24,8 +23,10 @@ Contributing to the larger Disciple.Tools project is welcome. Contribution and c
 
 For general tips on getting started contributing to a project on GitHub, see the [Contributor's Guide from the freeCodeCamp project](https://github.com/freeCodeCamp/how-to-contribute-to-open-source/blob/master/CONTRIBUTING.md).
 
-For Disciple.Tools (WP theme) specific recommendations, see [How to Contribute
-](https://github.com/DiscipleTools/disciple-tools-theme#how-to-contribute).
+Read the [Contribution Guidelines](Code-Contribution/contribution-guidelines.md)
+
+And help for creating a Fork and Pull Requests, see [From Fork to Pull Request
+](Code-Contribution/From%20Fork%20to%20Pull%20Request.md).
 
 ### Code of Conduct
 
@@ -34,9 +35,3 @@ Please read our [Code of Conduct](code-of-conduct.md)
 ### Disciple.Tools Developer Setup
 
 Get set up on your local dev machine with these [local setup instructions](Local-Setup)
-
-### Disciple.Tools Developer Documentation
-
-See https://disciple.tools/dev-docs/
-
-![Disciple Tools Logo](https://disciple.tools/wp-content/uploads/iStock-950739144-Converted-1024x839.png)

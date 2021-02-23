@@ -1,4 +1,6 @@
-# Setting Up the Build Process
+# Gulp - CSS and JS 
+
+## Setting Up the Build Process
 
 D.T Uses gulp to compile and minify the css and javascript. If you will be contributing styling or JS changes you will need to use gulp.
   - First you need to have Node.js installed on your computer. You can download and install Node.js from [here](https://nodejs.org/)
@@ -15,7 +17,7 @@ D.T Uses gulp to compile and minify the css and javascript. If you will be contr
 
   - If you will making multiple changes to css or js files you will probably not want to have to run gulp after every change. In this case you can use the command `gulp watch` and gulp will watch for any changes to scss or js files and will automatically run when the file is changed. 
   
-# CSS
+## CSS
 D.T uses SCSS for CSS styiling.
 The SCSS files can be found under `dt-assets > scss.`
 
@@ -27,6 +29,6 @@ You probably want to modify:
 Compile your changes to css by running `gulp` in your terminal in the theme root.  
 This generates the `dt-assets/build/css/style.min.css` file that is used by the browser
 
-# JS
+## JS
 If you modify `dt-assets/js/footer-scripts.js` you will also need to run `gulp` to apply the changes.  
 The outpet is `dt-assets/build/js/scripts.min.js`

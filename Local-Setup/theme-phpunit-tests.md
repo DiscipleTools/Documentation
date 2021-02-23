@@ -1,4 +1,6 @@
-# Setup testing environment
+# Unit Tests
+
+## Setup testing environment
 
 In the theme root within your environment (localWP: "Open site shell" option) run:
 ```
@@ -18,7 +20,7 @@ Notes:
 On localWP, remove `--protocal=tcp` on line #141 of ./tests/install-wp-tests.sh  
 You may need to install svn: `sudo apt install subversion`
 
-# Running the tests
+## Running the tests
 Run `phpunit` form the theme root.
 
 The tests need phpunit v7. v8 and above currently don't work. You can install phpunit with:
@@ -26,7 +28,7 @@ The tests need phpunit v7. v8 and above currently don't work. You can install ph
 composer global require "phpunit/phpunit=7.5.*"
 ```
 
-# Writting tests:
+## Writting tests:
 - tests are located in the theme ./tests folder
 - unit test files need to start with 'unit-test'
 - unit test function need to start with 'test_'
