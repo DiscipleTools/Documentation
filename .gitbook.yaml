@@ -1,0 +1,5 @@
+root: ./
+
+structure:
+    readme: HOME.md
+    summary: SUMMARY.md

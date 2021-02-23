@@ -1,7 +1,7 @@
 # Table of contents
 
 * [Disciple.Tools Technical Documentation](README.md)
-* [Theme-Core](theme-core/README.md)
+* [Theme Core](theme-core/README.md)
   * [Disciple.Tools Translation](theme-core/translation.md)
   * [API - Posts](theme-core/api-posts/README.md)
     * [Get Following](theme-core/api-posts/post-following.md)
@@ -50,8 +50,8 @@
   * [Unit Tests](local-setup/theme-phpunit-tests.md)
   * [D.T on Docker Setup](local-setup/dt-docker.md)
   * [Gulp - CSS and JS](local-setup/gulp-js-css.md)
-* [Code-Contribution](code-contribution/README.md)
-  * [Contribution Guidelines](code-contribution/contribution-guidelines.md)
+* [Code Contribution](code-contribution/README.md)
+  * [Theme Contribution Guidelines](code-contribution/contribution-guidelines.md)
   * [How to Correctly Contribute to the Disciple Tools Repository](code-contribution/from-fork-to-pull-request.md)
 * [Style Guide](style-guide.md)
 * [Disciple.Tools Code of Conduct](code-of-conduct.md)
