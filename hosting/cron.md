@@ -10,7 +10,7 @@ The solution is to disable the WP cron strategy. To do this, open the wp-config.
 
 Then you want to setup a cron on your server or with your hosting service to run every 15 mins:
 
-`* /15 * * * * wget -q -O - http://yourdomain.com/wp-cron.php?doing_wp_cron >/dev/null 2>&1`
+`*/15 * * * * wget -q -O - http://yourdomain.com/wp-cron.php?doing_wp_cron >/dev/null 2>&1`
 
 If these instructions don’t make sense, google the name of you hosting service and Replace WordPress Cron
 
