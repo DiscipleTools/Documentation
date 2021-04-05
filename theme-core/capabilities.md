@@ -66,10 +66,10 @@ Give the user access to view their or all records of the post\_type
 **create\_\[post\_type\]**  
 Gives the user the ability to create a record of the post\_type
 
-**list**_**all**_**\[post\_type\]**  
+**list\_all\_\[post\_type\]**  
 List all post\_type record names in typeaheads
 
-**assign**_**any**_**\[post\_type\]**  
+**assign\_any\_\[post\_type\]**  
 Ability to assign any post\_type record to a user.
 
 **access\_specific\_sources**  
@@ -78,6 +78,6 @@ Ability to list and update all contacts of source x
 **dt\_all\_access\_contacts** &gt;= v1.0.0  
 List and update all contact of type 'access'
 
-**view**_**any**_**\[post\_type\]**  
+**view\_any\_\[post\_type\]**  
 gives full permission to view and update all records of the post type. Recommended only for API/script use.
 
