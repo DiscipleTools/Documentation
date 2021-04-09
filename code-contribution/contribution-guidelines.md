@@ -20,6 +20,9 @@ If you are working on a plugin based off our starter plugin run `./includes/admi
 
 Note: rules for PHPCS are located in the `phpcs.xml` file. We sometimes update the rule list as PHPCS updates. We’ll update the [starter plugin](https://github.com/DiscipleTools/disciple-tools-starter-plugin) `phpcs.xml`, you might want to look there to get the latest version.
 
+Run phpcbf to auto-fix some phpcs issues:
+`vendor/bin/phpcbf --standard="phpcs.xml" dt-core/`
+
 ## GitHub and Commits
 
 For new plugins copy our [starter plugin](https://github.com/DiscipleTools/disciple-tools-starter-plugin).
