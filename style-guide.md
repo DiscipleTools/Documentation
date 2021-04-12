@@ -15,8 +15,8 @@ Status Colors
 ![\#4CAF50](https://via.placeholder.com/15/4CAF50/000000?text=+) Active: \#4CAF50  
 ![\#FF9800](https://via.placeholder.com/15/FF9800/000000?text=+) Paused: \#FF9800  
 ![\#F43636](https://via.placeholder.com/15/F43636/000000?text=+) New: \#F43636  
-![\#366184](https://via.placeholder.com/15/366184/000000?text=+) other: \#366184
-![\#808080](https://via.placeholder.com/15/808080/000000?text=+) Archived: \#808080
+![\#366184](https://via.placeholder.com/15/366184/000000?text=+) other: \#366184  
+![\#808080](https://via.placeholder.com/15/808080/000000?text=+) Archived: \#808080  
 
 ## CSS filters for svg icons.
 
