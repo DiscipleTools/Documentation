@@ -46,14 +46,13 @@ fields = [
 Field examples:
 
 * sources
-* tags
 * milestones
 
 ```php
 $fields = [
   "sources" => [
     "values" => [ 
-      [ "value" => "web" ],  //add new, or make sure it exists
+      [ "value" => "web" ],  //set a value, the value must be predifined in the field options
       [ "value" => "phone", "delete" => true ] //remove existing
     ],
     "force_values" => false // true will set source to the values entries. removing all others
