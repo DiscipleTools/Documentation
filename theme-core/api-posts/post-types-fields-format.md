@@ -72,7 +72,7 @@ Functions just like `multi_select`, but without requiring a pre-defined list of 
 $fields = [
   "tags" => [
     "values" => [ 
-      [ "value" => "web" ],  //set a value, the value must be predefined in the field options
+      [ "value" => "web" ],
       [ "value" => "phone", "delete" => true ] //remove existing
     ],
     "force_values" => false // true will set tags to the values entries. removing all others
