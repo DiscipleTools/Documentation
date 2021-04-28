@@ -48,13 +48,14 @@ let searchParameters = {
 }
 ```
 
-### `key_select`, `multi_select`
+### `key_select`, `multi_select`, `tags`
 
 Parameters: \(array\) of keys.
 
 * overall\_stats \(key\_select\)
 * milestones \(mutli\_select\)
 * gender \(key\_select\)
+* tags \(tags\)
 * etc
 
 Example:
@@ -63,7 +64,8 @@ Example:
 // get contacts that have the 'Has Bible' or 'Reading Bible' milestones and that are at the 'Meeting Scheduled' stage.
 let searchParameters = {
   milestones: [ 'milestone_has_bible', 'milestone_reading_bible' ],
-  seeker_path: [ 'scheduled' ]
+  seeker_path: [ 'scheduled' ],
+  tags: [ 'open' ]
 }
 ```
 
