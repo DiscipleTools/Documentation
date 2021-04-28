@@ -21,6 +21,7 @@ Notes:
 - On localWP, remove `--protocal=tcp` on line \#141 of ./tests/install-wp-tests.sh  
 - On localWP, you can get the database port from the browser url after opening adminer
 - You may need to install svn: `sudo apt install subversion`
+- If you get an error that looks like: `Could not find /{path}/wordpress-tests-lib /includes/functions.php, have you run tests/install-wp-tests.sh ?` delete the temp folder and run the install again.
 
 ## Running the tests
 
