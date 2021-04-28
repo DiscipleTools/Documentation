@@ -52,10 +52,30 @@ Field examples:
 $fields = [
   "sources" => [
     "values" => [ 
-      [ "value" => "web" ],  //set a value, the value must be predifined in the field options
+      [ "value" => "web" ],  //set a value, the value must be predefined in the field options
       [ "value" => "phone", "delete" => true ] //remove existing
     ],
     "force_values" => false // true will set source to the values entries. removing all others
+  ]
+]
+```
+
+## tags
+
+Field examples:
+
+* tags
+
+Functions just like `multi_select`, but without requiring a pre-defined list of values.
+
+```php
+$fields = [
+  "tags" => [
+    "values" => [ 
+      [ "value" => "web" ],  //set a value, the value must be predefined in the field options
+      [ "value" => "phone", "delete" => true ] //remove existing
+    ],
+    "force_values" => false // true will set tags to the values entries. removing all others
   ]
 ]
 ```
