@@ -17,8 +17,10 @@ Note for localWP on linux the command looks like this for localWP:
 `./tests/install-wp-tests.sh local-test root root localhost:10063`
 
 Notes:  
-On localWP, remove `--protocal=tcp` on line \#141 of ./tests/install-wp-tests.sh  
-You may need to install svn: `sudo apt install subversion`
+- On localWP, make sure you are running from the "Open site shell" menu option, so the environment is loaded
+- On localWP, remove `--protocal=tcp` on line \#141 of ./tests/install-wp-tests.sh  
+- On localWP, you can get the database port from the browser url after opening adminer
+- You may need to install svn: `sudo apt install subversion`
 
 ## Running the tests
 
