@@ -4,6 +4,7 @@
 
 * multi\_select
 * key\_select
+* tags
 * communication\_channel
 * connection
 * user\_select
