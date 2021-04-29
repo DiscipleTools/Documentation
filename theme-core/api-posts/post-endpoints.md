@@ -46,3 +46,6 @@ Settings
 * Get settings: GET /wp-json/dt-posts/v2/{post-type}/settings
 * Multi\_select values: GET /wp-json/dt-posts/v2/{post-type}/multi-select-values
 
+Global Search
+
+* [Global search](global-search.md): GET /wp-json/dt-posts/v2/posts/search/advanced_search
