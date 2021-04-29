@@ -11,6 +11,7 @@
     * [Post Comments](theme-core/api-posts/post-comments.md)
     * [Post Activity](theme-core/api-posts/post-activity.md)
     * [List Query](theme-core/api-posts/list-query.md)
+    * [Global Search](theme-core/api-posts/global-search.md)
     * [Posts in Typeaheads](theme-core/api-posts/list-posts-compact.md)
     * [Post-Sharing](theme-core/api-posts/post-sharing.md)
     * [Get Following](theme-core/api-posts/post-following.md)
@@ -53,4 +54,3 @@
   * [How to Correctly Contribute to the Disciple Tools Repository](code-contribution/from-fork-to-pull-request.md)
 * [Style Guide](style-guide.md)
 * [Disciple.Tools Code of Conduct](code-of-conduct.md)
-
