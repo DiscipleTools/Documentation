@@ -80,13 +80,15 @@ $fields = [
 ]
 ```
 
-## Contact Fields
+## communication\_channel
 
 * contact\_phone
 * contact\_email
 * contact\_address
 * contact\_facebook
 * etc
+
+Note: The field name must start with `contact_`
 
 There are three actions you can take:
 
