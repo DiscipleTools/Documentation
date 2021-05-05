@@ -62,6 +62,7 @@ function dt_contact_fields( array $fields, string $post_type = ""){
 * **p2p\_key**: the p2p connection key. See Declaring Connection Fields below.
 * **p2p\_direction**: the p2p direction. See Declaring Connection Fields below.
 * **create-icon**: url for the icon user in the typeahead create button.
+* **only\_for\_types**: \(array\) array of the record types the field should be visible on.
 
 **Extra parameters for communication\_channel fields**
 
