@@ -55,6 +55,7 @@ function dt_contact_fields( array $fields, string $post_type = ""){
 * **hidden**: \(bool\). If this field should show on the front end in filter options or new record pages.
 * **show\_in\_table**: \(int\). If this field should by default show in the list table. Lower number means higher priority. 
 * **custom\_display**: \(bool\). If this field should be ignored by D.T field display generator.
+* **only\_for\_types**: \(array\) array of the record types the field should be visible on.
 
 **Extra Parameters for connections fields**
 
@@ -62,7 +63,7 @@ function dt_contact_fields( array $fields, string $post_type = ""){
 * **p2p\_key**: the p2p connection key. See Declaring Connection Fields below.
 * **p2p\_direction**: the p2p direction. See Declaring Connection Fields below.
 * **create-icon**: url for the icon user in the typeahead create button.
-* **only\_for\_types**: \(array\) array of the record types the field should be visible on.
+
 
 **Extra parameters for communication\_channel fields**
 
