@@ -52,5 +52,6 @@
 * [Code Contribution](code-contribution/README.md)
   * [Theme Contribution Guidelines](code-contribution/contribution-guidelines.md)
   * [How to Correctly Contribute to the Disciple Tools Repository](code-contribution/from-fork-to-pull-request.md)
+  * [How to Translate Your Plugin](code-contribution/how-to-translate-your-plugin.md)
 * [Style Guide](style-guide.md)
 * [Disciple.Tools Code of Conduct](code-of-conduct.md)
