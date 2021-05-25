@@ -11,8 +11,11 @@ You have the choice between a single instance and a multisite instance.
 A single instance is fine if you have one team in one location.
 
 You'll want a multisite if you have multiple teams, multiple locations, or need more control over who has access to what.
+We suggest using the subdirectly multisite install instead of the subdirectly install. The main benefit is that you can use one ssl cert for the whole site.
 
 We recommend starting with a multisite. This makes it easier to add instances later as your ministry grows.
+
+See [single or multisite](https://developers.disciple.tools/hosting/single-or-multisite) for more information.
 
 To use multisite you'll need to first purchase the "Wordpress Multisite" Add-on from Billing &gt; Purchase Add-ons \([https://my.wpengine.com/modify\_plan](https://my.wpengine.com/modify_plan)\). It will cost ~$200 \(one time expense\).
 
@@ -41,6 +44,10 @@ After your custom domain is set up
 Click SSL &gt; Add Certificates &gt; Get FREE certificate using the Let's Encrypt option
 
 ### Multisite
+
+If you selected "subdirectory" as you multisite install then it is the same single site strategy.
+
+For "subdomain insteals":
 
 If you add each subdomain to the domains panel then it is the single site process.
 
