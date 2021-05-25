@@ -17,6 +17,8 @@ We recommend starting with a multisite. This makes it easier to add instances la
 
 See [single or multisite](https://developers.disciple.tools/hosting/single-or-multisite) for more information.
 
+Any plan is good for the single site. For multisite you need to start with a plan that supports the "WordPress Multisite available for purchase" option. Currently starting at the "MANAGED HOSTING PROFESSIONAL" plan.
+
 To use multisite you'll need to first purchase the "Wordpress Multisite" Add-on from Billing &gt; Purchase Add-ons \([https://my.wpengine.com/modify\_plan](https://my.wpengine.com/modify_plan)\). It will cost ~$200 \(one time expense\).
 
 You now have a WordPress instance at \[instance\_name\].wpengine.com
