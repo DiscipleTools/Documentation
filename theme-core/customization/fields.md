@@ -9,10 +9,11 @@
 * connection
 * user\_select
 * text
+* textarea
 * date
 * number
 * array
-* post\_user\_meta
+* tasks
 * boolean
 * location
 
