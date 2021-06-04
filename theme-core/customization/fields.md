@@ -16,6 +16,7 @@
 * tasks
 * boolean
 * location
+* location_meta
 
 ## Adding fields
 
