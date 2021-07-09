@@ -9,7 +9,5 @@ Contacts and Groups are post types. With custom post types you can add a post ty
 * a set of endpoints ready to use.
 * some cool to show your friends.
 
-To create a custom post type copy our "clusters" example or replace all occurrences of "clusters" with the word of your choice.
-
-Clusters plugin: [https://github.com/DiscipleTools/disciple-tool-clusters](https://github.com/DiscipleTools/disciple-tool-clusters)
+To create a custom post type see our "starters" plugin: [https://github.com/DiscipleTools/disciple-tools-plugin-starter-template](https://github.com/DiscipleTools/disciple-tools-plugin-starter-template)
 
