@@ -33,6 +33,7 @@
     * [Site-to-Site-Link](theme-core/authentication/site-to-site-link.md)
   * [Permissions](theme-core/capabilities.md)
   * [Roles and Permissions](theme-core/roles-permissions.md)
+  * [Database Tables](theme-core/tables.md)
   * [Disciple.Tools Translation](theme-core/translation.md)
   * [Revisions](theme-core/revisions/README.md)
     * [v1.0.0-dev-changes](theme-core/revisions/v1.0.0-dev-changes.md)
