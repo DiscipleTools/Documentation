@@ -6,7 +6,7 @@ WordPress’s default scheduling strategy depends on traffic. So then if no one 
 
 
 For WPEngine.com: see this section in their documentatian [https://wpengine.com/support/wp-cron-wordpress-scheduling/#WP_Engine_Alternate_Cron](https://wpengine.com/support/wp-cron-wordpress-scheduling/#WP_Engine_Alternate_Cron)
-They will do everything for you. 
+They will do everything for you. Note each subsite on a multisite needs its own request.
 
 For other hosting services: we recommend googling the name of you hosting service along with "Replace WordPress Cron"
 
