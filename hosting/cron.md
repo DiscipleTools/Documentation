@@ -25,11 +25,10 @@ you want to setup a cron on your server or with your hosting service to run ever
 `*/5 * * * * wget -q -O - http://yourdomain.com/wp-cron.php?doing_wp_cron >/dev/null 2>&1`
 
 
-### option 2 - Outsite Cron service
+### Option 2 - Outsite Cron service
 
-An alternative to setting up a cron job is to use a service like Uptime Robot which you can set to ping your server every 5 minutes.
+An alternative to setting up a cron job is to use a service like Uptime Robot which you can set to ping `http://yourdomain.com/wp-cron.php?doing_wp_cron` every 5 minutes.
 
-For WPEngine see: [https://wpengine.com/support/wp-cron-wordpress-scheduling/](https://wpengine.com/support/wp-cron-wordpress-scheduling/)
 
 ## On Multisites
 The same process has to be done on each subsite on your multisite
