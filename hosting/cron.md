@@ -27,7 +27,7 @@ you want to setup a cron on your server or with your hosting service to run ever
 
 ### Option 2 - Outsite Cron service
 
-An alternative to setting up a cron job is to use a service like Uptime Robot which you can set to ping `http://yourdomain.com/wp-cron.php?doing_wp_cron` every 5 minutes.
+An alternative to setting up a cron job is to use a service like [Uptime Robot](https://uptimerobot.com/) to ping `http://yourdomain.com/wp-cron.php?doing_wp_cron` every 5 minutes.
 
 
 ## On Multisites
