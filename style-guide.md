@@ -24,5 +24,11 @@ Add this css to an icon to change its color.
 
 To \#3F729B ![\#3F729B](https://via.placeholder.com/15/3F729B/000000?text=+) `filter: invert(41%) sepia(42%) saturate(518%) hue-rotate(164deg) brightness(94%) contrast(100%);`
 
-See [https://codepen.io/sosuke/pen/Pjoqqp](https://codepen.io/sosuke/pen/Pjoqqp)
+To find a good filter see [https://codepen.io/sosuke/pen/Pjoqqp](https://codepen.io/sosuke/pen/Pjoqqp)
 
+Use the existing `dt-white-icon`,`dt-blue-icon` and`dt-green-icon` classes to quitly change an icon color.
+
+Example: 
+`<img src="settings.svg">` gives ![image](https://user-images.githubusercontent.com/24901539/134213152-5dd422c6-f6c7-411a-9289-77e6cdc32fa0.png)
+
+`<img class="dt-blue-icon" src="settings.svg">` gives ![image](https://user-images.githubusercontent.com/24901539/134213328-1afde89c-a7ea-45cf-b5bd-6faedd371ed0.png)
