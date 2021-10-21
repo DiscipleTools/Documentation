@@ -171,32 +171,68 @@ $fields = [
 * subassigned
 * relation
 
-Let's say our contact is connected to locations with IDs 1, 3 and 43. This example will add the location with ID 1 and will remove the location with ID 43. The contact will then be connected to locations 1 and 3
+Let's say our contact is connected to groups with IDs 1, 3 and 43. This example will add the group with ID 1 and will remove the group with ID 43. The contact will then be connected to group 1 and 3
 
 ```php
 $fields = [
-  "locations" => [
+  "groups" => [
     "values" => [ 
       [ "value" => 1 ],
       [ "value" => 43, "delete" => true ]
     ],
-    "force_values" => false // true will set locations to the values entries. removing all others
+    "force_values" => false // true will set groups to the values entries. removing all others
   ]
 ]
 ```
 
-This example will remove locations 1 and 3 and leave the contact connected to location 5:
+This example will remove groups 1 and 3 and leave the contact connected to group 5:
 
 ```php
 $fields = [
-  "locations" => [
+  "groups" => [
     "values" => [ 
       [ "value" => 5 ],
     ],
-    "force_values" => true // true will set locations to the values entries. removing all others
+    "force_values" => true // true will set groups to the values entries. removing all others
   ]
 ]
 ```
+
+### connection meta
+Add meta data when creating or updating a connection value. Here we add the role and date meta to the group member.
+
+```php
+$fields = [
+  "groups" => [
+    "values" => [ 
+      [ 
+        "value" => 5,
+        "meta" => [
+          "role" => "treasurer",
+          "date" => time()
+        ]
+      ],
+    ],
+  ]
+]
+```
+Use the same syntax for creating or updating a connection. To delete a connection meta send an empty string:
+```php
+$fields = [
+  "groups" => [
+    "values" => [ 
+      [ 
+        "value" => 5,
+        "meta" => [
+          "role" => "",
+          "date" => ""
+        ]
+      ],
+    ],
+  ]
+]
+```
+
 
 ## post\_user\_meta
 
