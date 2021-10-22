@@ -32,7 +32,7 @@ function create_contact( $fields ) {
   $site_key = md5($token . "example.disciple.tools" . "example.com");
   $transfer_token = md5($site_key . date('Y-m-dH'));
 
-  $url = 'https://example.disciple.tools/wp-json/dt/v1/contact/create';
+  $url = 'https://example.disciple.tools/wp-json/dt-posts/v2/contacts';
   $req = curl_init();
   curl_setopt_array($req, array(
     CURLOPT_URL => $url,
@@ -65,7 +65,7 @@ function create_contact( $fields ){
         'Authorization' => 'Bearer ' . $transfer_token,
     ],
   ];
-  return wp_remote_post( 'https://example.disciple.tools/wp-json/dt/v1/contact/create', $args );
+  return wp_remote_post( 'https://example.disciple.tools/wp-json/dt-posts/v2/contacts', $args );
 }
 ```
 
@@ -84,7 +84,7 @@ create_contact = (fields)=>{
 
   let options = {
     method: "POST",
-    uri: 'https://example.disciple.tools/wp-json/dt/v1/contact/create',
+    uri: 'https://example.disciple.tools/wp-json/dt/dt-posts/v2/contacts',
     body: fields,
     headers: {
       Authorization: 'Bearer ' + transfer_token
