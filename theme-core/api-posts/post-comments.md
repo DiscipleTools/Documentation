@@ -38,6 +38,13 @@ Query params: add `?silent=true` to disable notifications
 }
 ```
 
+**links** Create a link to another record, page or site
+```javascript
+{
+    "comment": "See changes on [link text](link url)
+}
+```
+
 ### Returns
 
 \(object\) The default wordpress comment. See [https://developer.wordpress.org/reference/functions/get\_comment/](https://developer.wordpress.org/reference/functions/get_comment/)
