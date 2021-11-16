@@ -25,13 +25,16 @@ Notes:
 
 ## Running the tests
 
-Run `phpunit` form the theme root.
-
-The tests need phpunit v7. v8 and above currently don't work. You can install phpunit with:
+Install phpunit and phpunit-polyfills form the theme root.
 
 ```bash
-composer global require "phpunit/phpunit=7.5.*"
+composer require "phpunit/phpunit=7.5.*"
+composer require "yoast/phpunit-polyfills"
 ```
+
+Run `./vendor/bin/phpunit`
+
+The tests need phpunit v7. v8 and above currently don't work.
 
 ## Writing tests
 
