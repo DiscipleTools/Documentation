@@ -233,6 +233,18 @@ $fields = [
 ]
 ```
 
+### Creating a post from a connection field
+Example: Cantact A baptized someone (not yet a contact in the system). We can use the `additional_meta` parameter to create the new contact and set the `baptized_by` field by passing in the `baptized` connection field key. When creating the new contact, the API with translate `baptized` to `baptized_by` and set the new contact to be baptized by Contact A.
+
+```php
+$fields = [
+  "additional_meta": [
+    "created_from": 45, //the id of the existing record you want use in the connection
+    "add_connection": "baptized", //the connection field where the new record is created from
+  ]
+]
+```
+
 
 ## post\_user\_meta
 
