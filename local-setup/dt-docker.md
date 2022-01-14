@@ -144,7 +144,7 @@ Configure Docker according to which one of the [3 approaches](dt-docker.md#three
 >
 > * Login to _wp-admin_ and go to ![icon](../.gitbook/assets/WP_Settings_Icon.png) _Settings &gt; Permalinks_. _You don’t need to change anything_, just click _Save_ at the bottom.
 >
->   \(Source: [https://disciple-tools.readthedocs.io](https://disciple-tools.readthedocs.io) section: [Errors on New Installation](https://disciple-tools.readthedocs.io/en/latest/Disciple_Tools_Theme/development/self_hosting.html#errors-on-new-install)\)
+>   \(Source: [https://developers.disciple.tools/](https://developers.disciple.tools/) section: [Errors on New Installation](https://developers.disciple.tools/hosting/404)\)
 
 ### Install Theme
 
