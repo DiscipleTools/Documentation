@@ -63,7 +63,7 @@ Under SSL, select the certificate and choose “Secure All URLs”.
 
 ## Backups
 
-Have a strategy for offsite backups. If WPEngine accidentally deletes your account or it gets frozen \(GDPR?\) you want to have access to your data. See [https://disciple-tools.readthedocs.io/en/latest/Disciple\_Tools\_Theme/development/self\_hosting.html\#backups](https://disciple-tools.readthedocs.io/en/latest/Disciple_Tools_Theme/development/self_hosting.html#backups)
+Have a strategy for offsite backups. If WPEngine accidentally deletes your account or it gets frozen \(GDPR?\) you want to have access to your data. See [https://developers.disciple.tools/hosting/backups](https://developers.disciple.tools/hosting/backups)
 
 ## Additional Configuration
 
