@@ -24,7 +24,7 @@ Clone the Repo and submit a Pull Request when your feature is ready. See the [he
 
 ## Plugin Contribution
 
-All our plugin are open source, you can see a list of theme [here](https://disciple.tools/plugins/)
+All our plugins are open source, you can see a list of them [here](https://disciple.tools/plugins/)
 
 Use the same instructions for the Theme to Fork and Contribute to a plugin
 
@@ -37,4 +37,3 @@ We encourage you to check it out and start developing from there.
 ### Code of Conduct
 
 Please read our [Code of Conduct](code-of-conduct.md)
-
