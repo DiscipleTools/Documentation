@@ -87,6 +87,11 @@ function dt_contact_fields( array $fields, string $post_type = ""){
     ]
   ]
   ```
+  
+**Extra parameters for number field**
+
+* **min_option**: \(number\). Optional parameter to define a minimum for this field
+* **max_option**: \(number\). Optional parameter to define a maximum for this field
 
 ## Declaring Connection Fields
 
