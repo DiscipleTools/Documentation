@@ -73,7 +73,8 @@ function dt_contact_fields( array $fields, string $post_type = ""){
 
 **Extra parameters for key\_select and multi\_select field**
 
-* **default\_color**: \(string\). Default color for key\_select and multi\_select options. This triggers the color mode for the select field 
+* **default\_color**: \(string\). Default color for key\_select and multi\_select options. This triggers the color mode for the select field
+* **select_cannot_be_empty**: (bool). Selects the first value instead of an empty value by default 
 * **default**: options:
 
   ```php
@@ -94,20 +95,6 @@ function dt_contact_fields( array $fields, string $post_type = ""){
 * **max_option**: \(number\). Optional parameter to define a maximum for this field
 
 ## Declaring Connection Fields
-
-Connections field types need to be registered so the connection can be saved in database in the p2p table.
-
-Let's register Groups connection.
-
-```php
-p2p_register_connection_type(
-    [
-        'name'           => 'contacts_to_groups',
-        'from'           => 'contacts',
-        'to'             => 'groups',
-    ]
-);
-```
 
 Here the connection is from the contacts post type to the groups post\_type.
 
