@@ -27,7 +27,7 @@ Run phpcbf to auto-fix some phpcs issues:
 
 If all of the WP functions are showing up as errors saying that the function is undefined, you can try adding the entire WP site to your editor, so that it can automatically pick up the WP function definitions from `wp-include`, `wp-admin` etc.
 
-## phpcs sniff errors
+## PHPCS sniff errors
 
 If you get errors such as, `phpcs Referenced sniff "WordPress" does not exist` this could be due to your editor not using the correct `phpcs` or `phpcs.xml` file. It could be using a globally installed version instead.
 
