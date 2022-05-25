@@ -23,6 +23,23 @@ Note: rules for PHPCS are located in the `phpcs.xml` file. We sometimes update t
 Run phpcbf to auto-fix some phpcs issues:
 `vendor/bin/phpcbf --standard="phpcs.xml" dt-core/`
 
+## Missing WP functions errors
+
+If all of the WP functions are showing up as errors saying that the function is undefined, you can try adding the entire WP site to your editor, so that it can automatically pick up the WP function definitions from `wp-include`, `wp-admin` etc.
+
+## PHPCS sniff errors
+
+If you get errors such as, `phpcs Referenced sniff "WordPress" does not exist` this could be due to your editor not using the correct `phpcs` or `phpcs.xml` file. It could be using a globally installed version instead.
+
+Make sure that you point your editor to the local phpcs file in `vendor/bin/phpcs` and phpcs config file `phpcs.xml` in the `disciple-tools-theme` directory.
+
+In vscode the settings look roughly like this, depending on your setup and where the settings are being kept. In this example a directory specific settings.json file is being used in the root of the website. The paths, may need to be the full absolute paths or relative paths to where the settings file is.
+
+```
+    "phpcs.executablePath": "wp-content/themes/disciple-tools-theme/vendor/bin/phpcs",
+    "phpcs.standard": "wp-content/themes/disciple-tools-theme/phpcs.xml"
+```
+
 ## GitHub and Commits
 
 For new plugins copy our [starter plugin](https://github.com/DiscipleTools/disciple-tools-starter-plugin).
