@@ -60,6 +60,24 @@ $fields = [
 ]
 ```
 
+## links
+
+Field examples:
+
+* none as yet
+
+```php
+$fields = [
+  "social_links" => [
+    "values" => [ 
+      [  "type" => "fb", "value" => "facebook.com", "meta_id" => "1234" ],  //set a value, the type must be predefined in the field options, meta_id is only needed if updating a value
+      [ "meta_id" => "1234", "delete" => true ] //remove existing
+    ],
+    "force_values" => false // true will set source to the values entries. removing all others
+  ]
+]
+```
+
 ## tags
 
 Field examples:
