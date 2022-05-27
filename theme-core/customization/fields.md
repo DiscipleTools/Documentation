@@ -10,6 +10,7 @@
 * user\_select
 * text
 * textarea
+* link
 * date
 * number
 * array
@@ -88,6 +89,21 @@ function dt_contact_fields( array $fields, string $post_type = ""){
     ]
   ]
   ```
+
+**Extra parameters for link field**
+
+This field type is similar to the multi-select field type.
+
+```php
+[
+    "option_key" => [
+        "label" => "" // name of the option
+        "description" => "" //option description
+        "icon" => "" The url of the icon to display next to the option.
+        "deleted" => bool, // don't show this option on the front end
+    ]
+]
+```
   
 **Extra parameters for number field**
 
