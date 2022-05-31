@@ -150,6 +150,8 @@ $fields = [
 ]
 ```
 
+If the number is greater than the max_option or less than the min_option for this field, an error will be returned
+
 ## location
 
 * location\_grid
