@@ -189,10 +189,10 @@ $fields = [
   'location_grid_meta' => [
     'values' => [
       [
-        “label” => “location name”,
-        “level” => “admin1”,
-        “lng” => 35,
-        “lat” => 45,
+        "label" => "location name",
+        "level" => "admin1",
+        "lng" => 35,
+        "lat" => 45,
       ]
     ]
   ]
@@ -205,8 +205,8 @@ $fields = [
   'location_grid_meta' => [
     'values' => [
       [
-        “lng” => 35,
-        “lat” => 45,
+        "lng" => 35,
+        "lat" => 45,
       ]
     ]
   ]
