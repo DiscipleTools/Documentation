@@ -175,7 +175,7 @@ $fields = [
   'location_grid_meta' => [
     'values' => [
       [
-        'grid_id' => $data['grid_id']
+        'grid_id' => 100000020
       ]
     ]
   ]
@@ -189,10 +189,10 @@ $fields = [
   'location_grid_meta' => [
     'values' => [
       [
-        "label" => "location name",
+        "label" => "Kunduz, Afganistan",
         "level" => "admin1",
-        "lng" => 35,
-        "lat" => 45,
+        "lng" => 68.7514,
+        "lat" => 36.8396,
       ]
     ]
   ]
@@ -205,8 +205,8 @@ $fields = [
   'location_grid_meta' => [
     'values' => [
       [
-        "lng" => 35,
-        "lat" => 45,
+        "lng" => 68.7514,
+        "lat" => 36.8396,
       ]
     ]
   ]
