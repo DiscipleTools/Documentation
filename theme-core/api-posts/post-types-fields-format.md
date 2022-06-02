@@ -170,6 +170,7 @@ You can submit geolocation information to the API using the Mapbox service in th
 
 (1) Submit using a known grid_id
 
+```php
 $fields = [
   'location_grid_meta' => [
     'values' => [
@@ -179,9 +180,11 @@ $fields = [
     ]
   ]
 ];
+```
 
 (2) Submit using longitude, latitude, location label, and location level information
 
+```php
 $fields = [
   'location_grid_meta' => [
     'values' => [
@@ -194,9 +197,10 @@ $fields = [
     ]
   ]
 ];
-
+```
 (3) Submit using just longitude and latitude
 
+```php
 $fields = [
   'location_grid_meta' => [
     'values' => [
@@ -207,7 +211,7 @@ $fields = [
     ]
   ]
 ];
-
+```
 
 Submitting location_grid_meta will trigger the mapping service to geocode the information to the location grid and install records in the correct tables. This allows for more advanced location storage and mapping.
 
