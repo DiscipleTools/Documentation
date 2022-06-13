@@ -10,7 +10,7 @@ Field examples:
 
 ```php
 fields = [
-  "title" => "John Doe" 
+  "title" => "John Doe"
 ]
 ```
 
@@ -51,7 +51,7 @@ Field examples:
 ```php
 $fields = [
   "sources" => [
-    "values" => [ 
+    "values" => [
       [ "value" => "web" ],  //set a value, the value must be predefined in the field options
       [ "value" => "phone", "delete" => true ] //remove existing
     ],
@@ -71,7 +71,7 @@ Functions just like `multi_select`, but without requiring a pre-defined list of 
 ```php
 $fields = [
   "tags" => [
-    "values" => [ 
+    "values" => [
       [ "value" => "web" ],
       [ "value" => "phone", "delete" => true ] //remove existing
     ],
@@ -102,7 +102,7 @@ $fields = [
     ["value" => "94 39 29 39"], //create
     ["key" => "contact_phone_123", "value" => "43 42 45 43"],  //update
     ["key" => "contact_phone_123", "delete" => true] //delete
-  ] 
+  ]
 ]
 ```
 
@@ -112,6 +112,16 @@ To change a detail on a contact method:
 $fields = [
   "contact_phone" => [
     ["key" => "contact_phone_123", "verified" => true],  //update verified flag
+  ]
+]
+```
+
+If either __Mapbox__ or __Google Geocode__ APIs are available, the `contact_address` field can also be instructed to support the auto-geolocating of manually entered addresses, with the use of a `geolocate` boolean flag.
+
+```php
+$fields = [
+  "contact_address" => [
+    ["value" => "Poland", "geolocate" => true] //create
   ]
 ]
 ```
@@ -166,7 +176,7 @@ $fields = [
 
 * location\_grid\_meta
 
-You can submit geolocation information to the API using the Mapbox service in three ways. 
+You can submit geolocation information to the API using the Mapbox service in three ways.
 
 (1) Submit using a known grid_id
 
@@ -233,7 +243,7 @@ Let's say our contact is connected to groups with IDs 1, 3 and 43. This example 
 ```php
 $fields = [
   "groups" => [
-    "values" => [ 
+    "values" => [
       [ "value" => 1 ],
       [ "value" => 43, "delete" => true ]
     ],
@@ -247,7 +257,7 @@ This example will remove groups 1 and 3 and leave the contact connected to group
 ```php
 $fields = [
   "groups" => [
-    "values" => [ 
+    "values" => [
       [ "value" => 5 ],
     ],
     "force_values" => true // true will set groups to the values entries. removing all others
@@ -261,8 +271,8 @@ Add meta data when creating or updating a connection value. Here we add the role
 ```php
 $fields = [
   "groups" => [
-    "values" => [ 
-      [ 
+    "values" => [
+      [
         "value" => 5,
         "meta" => [
           "role" => "treasurer",
@@ -277,8 +287,8 @@ Use the same syntax for creating or updating a connection. To delete a connectio
 ```php
 $fields = [
   "groups" => [
-    "values" => [ 
-      [ 
+    "values" => [
+      [
         "value" => 5,
         "meta" => [
           "role" => "",
@@ -312,7 +322,7 @@ Meta for a post for a specific user. This meta is only accessible by the user wh
 ```php
 $fields = [
   "reminders" => [
-    "values" => [ 
+    "values" => [
       [ "value" => "Call again" ],
       [ "value" => "Call again", date => "2018-01-01" ], //optional date value
       [ "id" => 43, "delete" => true ] //delete user the meta id.
@@ -331,7 +341,7 @@ $fields = [
     ["value" => "43 42 45 43"],
     ["value" => "94 39 29 39"]
   ],
-  "locations" => [ 
+  "locations" => [
     "values" => [
       [ "value" => "9" ]
     ]
@@ -341,4 +351,3 @@ $fields = [
 ]
 DT_Posts::create_post( 'contacts', $fields )
 ```
-
