@@ -15,8 +15,22 @@
     "display_name": "BOB JOE",
     "locale": "fr_FR",
     "locations": {
-      "location_grid": [],
-      "location_grid_meta": []
+      "location_grid": [{
+        "id": 100306693,
+        "label": "Poland"
+      }],
+      "location_grid_meta": [{
+        "grid_id": "100306693",
+        "grid_meta_id": "66",
+        "label": "Poland",
+        "lat": "52.124609907545",
+        "level": "admin0",
+        "lng": "19.30063630556",
+        "post_id": "1",
+        "post_type": "users",
+        "postmeta_id_location_grid": "573",
+        "source": "user"
+      }]
     },
     "apps": [
       {
@@ -61,8 +75,45 @@
         {
           "key": "fr",
           "label": "French"
+        },
+        {
+          "key": "es",
+          "label": "Spanish"
         }
-      ]
+      ],
+      "locations": {
+        "location_grid": [{
+          "id": 100306693,
+          "label": "Poland"
+        }],
+        "location_grid_meta": [{
+          "grid_id": "100306693",
+          "grid_meta_id": "66",
+          "label": "Poland",
+          "lat": "52.124609907545",
+          "level": "admin0",
+          "lng": "19.30063630556",
+          "post_id": "1",
+          "post_type": "users",
+          "postmeta_id_location_grid": "573",
+          "source": "user"
+        }]
+      },
+      "people_groups": [
+        {
+          "ID": "13",
+          "post_title": "Arab Egyptian"
+        },
+        {
+          "ID": "20",
+          "post_title": "Algerian, Arabic-speaking"
+        }
+      ],
+      "workload": {
+        "color": "#4caf50",
+        "id": "active",
+        "label": "Accepting new contacts"
+      }
     },
     "profile": {
       "ID": 1,
@@ -78,10 +129,6 @@
       "gender": "male",
       "language": "English (United States)",
       "locale": "en_US",
-      "locations": {
-        "location_grid": [],
-        "location_grid_meta": []
-      },
       "name": "Administrator",
       "nickname": "admin",
       "other": [],
