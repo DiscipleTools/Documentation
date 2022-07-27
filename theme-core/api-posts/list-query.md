@@ -164,7 +164,7 @@ let searchParameters = {
 
 Parameters \(array\):
 
-* **equality** options: `<`, `>`, `<=`, `>=` or `=` 
+* **operator** options: `<`, `>`, `<=`, `>=` or `=`
 * **number**
 
 Field examples:
@@ -177,7 +177,7 @@ Example:
 ```javascript
 // get records that are baptism generation greater than 4
 let searchParameters = {
-  baptism_generation => [ "equality" => ">", "number" => 4 ],
+  baptism_generation => [ "operator" => ">", "number" => 4 ],
 }
 ```
 
@@ -234,10 +234,10 @@ Examples:
 // records that are of field `type` `personal` AND coached by me
 let searchParameters = {
   fields: [
-    { 
+    {
       type: ["personal"],  
-    }, 
-    // AND 
+    },
+    // AND
     {
       coached_by: [ "me" ]
     }
@@ -250,10 +250,10 @@ let searchParameters = {
 // records that are of type "personal" OR coached by me
 let searchParameters = {
   fields: [
-    { 
+    {
       type: ["personal"],
-      //OR 
-      coached_by: [ "me" ] 
+      //OR
+      coached_by: [ "me" ]
     }
   ],
   sort: "name"
@@ -270,11 +270,11 @@ let searchParameters = {
       {
         type: ["personal"],
         // AND
-        coached_by: [ "me" ] 
+        coached_by: [ "me" ]
       },
-      // OR 
+      // OR
       {
-        assigned_to: [ "me" ], 
+        assigned_to: [ "me" ],
         //AND
         overall_status: [ "active" ]
       }
@@ -293,7 +293,7 @@ let searchParameters = {
 Example:
 
 ```javascript
-//Get the 30 most recently viewed posts by the user making the request. 
+//Get the 30 most recently viewed posts by the user making the request.
 let searchParameters = {
   dt_recent: true
 }
@@ -306,7 +306,7 @@ let searchParameters = {
 Example:
 
 ```javascript
-// get second page of records with each page having 100. 
+// get second page of records with each page having 100.
 let searchParameters = {
   offset: 100,
   limit: 100
@@ -353,7 +353,7 @@ let queryString = `https://example.com/wp-json/dt-posts/v2/contacts/?${queryPara
   posts: [
    { ... contact1 ... },
    { ... contact2 ... }
-  ], 
+  ],
   total: 339 // the total number of contacts available to page (see offset)
 }
 //for groups
@@ -361,8 +361,7 @@ let queryString = `https://example.com/wp-json/dt-posts/v2/contacts/?${queryPara
   posts: [
    { ... group1 ... },
    { ... group2 ... }
-  ], 
+  ],
   total: 34 // the total number of groups available to page (see offset)
 }
 ```
-
