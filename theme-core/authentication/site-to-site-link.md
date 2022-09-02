@@ -10,7 +10,7 @@ In **Site 1** add the D.T domain. Example: example.disciple.tools
 
 In **Site 2** add the remote server's. Example: example.com
 
-note: both domains need to be HTTPS. You can disable this for local testing by commenting this out [here](https://github.com/DiscipleTools/disciple-tools-theme/blob/683924b5d417a9d901e78cfb609d1c126972c459/dt-core/admin/site-link-post-type.php#L204).
+note: both domains need to be HTTPS. You can disable this for local testing by enabling `WP_DEBUG`
 
 **Connection type**: You will create a connection type and associate permissions to it. See below.
 
