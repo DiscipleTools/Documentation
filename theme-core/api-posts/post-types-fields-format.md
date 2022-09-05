@@ -70,10 +70,10 @@ Field examples:
 $fields = [
   "social_links" => [
     "values" => [ 
-      [  "type" => "fb", "value" => "facebook.com", "meta_id" => "1234" ],  //set a value, the type must be predefined in the field options, meta_id is only needed if updating a value
+      [  "type" => "fb", "value" => "facebook.com" ],  //set a value, the type must be predefined in the field options
+      [  "type" => "twitter", "value" => "twitter.com", "meta_id" => "1234" ],  //update a value
       [ "meta_id" => "1234", "delete" => true ] //remove existing
     ],
-    "force_values" => false // true will set source to the values entries. removing all others
   ]
 ]
 ```
