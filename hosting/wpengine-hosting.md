@@ -87,6 +87,9 @@ Multisite Tools and helpful functions: [https://github.com/DiscipleTools/discipl
 
 Show update notifications if your main site is not an instance of Disciple.Tools: [https://github.com/DiscipleTools/disciple-tools-multisite-mu-plugin](https://github.com/DiscipleTools/disciple-tools-multisite-mu-plugin)
 
+### Cloudflare
+Consider using cloudflare in front of your hosting for additional security. Create a free account and point the name servers for your domain to cloudflare.
+
 ## Notes
 
 * WPEngine does have a publicly accessible error log \(though you need to know the link to access it\). Error logs have the potential to dump personal contact info.
