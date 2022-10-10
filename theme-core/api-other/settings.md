@@ -24,6 +24,15 @@ Example format:
     "contacts": {},
     "groups": {}
     //etc
+  },
+  "plugins": {
+    disciple-tools-dashboard: {
+      name: "Disciple.Tools - Dashboard",
+      plugin_url: "http://multisite.local/wp-content/plugins/disciple-tools-dashboard/",
+      version:  "1.0.5"
+    },
+    disciple-tools-trainings: {},
+    //etc  
   }
 }
 ```
