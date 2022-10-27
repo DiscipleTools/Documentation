@@ -6,7 +6,7 @@ WordPress’s default scheduling strategy depends on traffic. So then if no one 
 
 
 For WPEngine.com: see this section in their documentatian [https://wpengine.com/support/wp-cron-wordpress-scheduling/#WP_Engine_Alternate_Cron](https://wpengine.com/support/wp-cron-wordpress-scheduling/#WP_Engine_Alternate_Cron)
-They will do everything for you. Note each subsite on a multisite needs its own request.
+They will do everything for you.
 
 For other hosting services: we recommend googling the name of you hosting service along with "Replace WordPress Cron"
 
@@ -23,6 +23,8 @@ Then,
 you want to setup a cron on your server or with your hosting service to run every 5 mins:
 
 `*/5 * * * * wget -q -O - http://yourdomain.com/wp-cron.php?doing_wp_cron >/dev/null 2>&1`
+
+**Note:** change `yourdomain.com` to you disciple.tools domain
 
 
 ### Option 2 - Outsite Cron service
