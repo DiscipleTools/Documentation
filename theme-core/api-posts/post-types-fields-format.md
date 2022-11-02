@@ -148,9 +148,17 @@ $fields = [
 
 * baptism\_date
 
+Can be either a date string or a numeric timestamp.
+
 ```php
 $fields = [
   "baptism_date" => "2018-12-31" //format yyyy-mm-dd
+]
+```
+
+```php
+$fields = [
+  "baptism_date" => 946720800 //timestamp
 ]
 ```
 
