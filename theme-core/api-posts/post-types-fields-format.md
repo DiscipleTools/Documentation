@@ -60,7 +60,7 @@ $fields = [
 ]
 ```
 
-## links
+## link
 
 Field examples:
 
