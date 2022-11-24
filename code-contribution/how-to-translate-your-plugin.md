@@ -48,7 +48,7 @@ dt_theme_enqueue_script('my_js_script', 'path/to/script/my-js-script.js' );
 ```
 $translations = [
 		'hello_world' => __( 'Hello, World!', 'disciple_tools' ),
-		'hello_user', => _x( 'Hello, USERNAME!', 'disciple_tools' ),
+		'hello_user', => _x( 'Hello, %s!', 'disciple_tools' ),
 		];
 ```
 5. If it's not already there, add a ```wp_localize_script()``` function to localize your script. Script localization passes values obtained through PHP to your JS script.
