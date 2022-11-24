@@ -194,7 +194,12 @@ If the number is greater than the max_option or less than the min_option for thi
 
 ```php
 $fields = [
-  "location_grid" => [ "values" => [ [ "value" => '100089589' ] ] ] //France
+  "location_grid" => [ 
+    "values" => [ 
+      [ "value" => '100089589' ] //France
+    ],
+    "force_values" => false // true will set locations to the values entries. removing all others
+  ] 
 ]
 ```
 
@@ -213,7 +218,8 @@ $fields = [
       [
         'grid_id' => 100000020
       ]
-    ]
+    ],
+    "force_values" => false // true will set locations to the values entries. removing all others
   ]
 ];
 ```
@@ -230,7 +236,8 @@ $fields = [
         "lng" => 68.7514,
         "lat" => 36.8396,
       ]
-    ]
+    ],
+    "force_values" => false // true will set locations to the values entries. removing all others
   ]
 ];
 ```
@@ -244,7 +251,8 @@ $fields = [
         "lng" => 68.7514,
         "lat" => 36.8396,
       ]
-    ]
+    ],
+    "force_values" => false // true will set locations to the values entries. removing all others
   ]
 ];
 ```
