@@ -31,3 +31,43 @@ There are a few different ways of translating your plugin. Here are a few.
 8. Make sure your code echoes the translated strings with the following format:
 ```<?php echo esc_html__( 'Hello, World!', 'my-plugin-name' ); ?>```
 9. Done! Your translation should appear for your plugin on the Disciple.Tools theme.
+
+
+
+## How to translate strings in JS files
+
+1. Open ```dt-assets/functions/enqueue_scripts.php```.
+2. Search for the if statement that looks for the PHP file that calls your JS script. If it doesn't appear in ```enqueue_scripts.php```, you will have to create an if statement that looks for it. Live examples of these if statements already exist in this file. You can use them as a reference.
+3. Inside the if statement, make sure that your JS script is added with ```dt_theme_enqueue_script()```. We're going to need the handle parameter for the next step (the first parameter in the ```dt_theme_enqueue_script()``` function).
+### Example:
+```
+dt_theme_enqueue_script('my_js_script', 'path/to/script/my-js-script.js' );
+```
+4. Create a ```$translations``` array that contains the keys and values for what you want the string to show. 
+### Example:
+```
+$translations = [
+		'hello_world' => __( 'Hello, World!', 'disciple_tools' ),
+		'hello_user', => _x( 'Hello, %s!', 'Hello, John!', disciple_tools' ),
+		];
+```
+5. If it's not already there, add a ```wp_localize_script()``` function to localize your script. Script localization passes values obtained through PHP to your JS script.
+6. The ```wp_localize_script()``` should have the handle from step 3 passed as the first parameter. The second parameter should be ```new_record_localized``` and the third parameter should be the information you want to localize. See example below.
+```
+wp_localize_script( 'my_js_script', 'new_record_localized', array(
+            'translations'  =>  $translations,
+        ) );
+```
+7. Now we move to the JS file, find the place that contains the string you wish to translate and replace it with the translated string. Translated strings are inside the ```window.new_record_localized.translations``` object.
+### Example:
+```
+function say_hello_world() {
+    return window.new_record_localized.translations['hello_world'];
+    // This returns 'Hello, World!'
+}
+
+function say_hello_to_user(username) {
+    return window.new_record_localized.translations['hello_user'].replace('%s', username);
+    // username = 'Bob', this returns: 'Hello, Bob!'
+}
+```
