@@ -55,7 +55,7 @@ $translations = [
 6. The ```wp_localize_script()``` should have the handle from step 3 passed as the first parameter. The second parameter should be ```new_record_localized``` and the third parameter should be the information you want to localize. See example below.
 ```
 wp_localize_script( 'my_js_script', 'new_record_localized', array(
-            'translations'       => apply_filters( 'my_js_script', $translations ),
+            'translations'  =>  $translations,
         ) );
 ```
 7. Now we move to the JS file, find the place that contains the string you wish to translate and replace it with the translated string. Translated strings are inside the ```window.new_record_localized.translations``` object.
