@@ -31,7 +31,7 @@
 ### wp_p2pmeta
 - Stores p2p meta. Currently unused
 
-### wp_dt_activity_log
+### [wp_dt_activity_log](wp-dt-activity-log.md)
 - D.T custom table, stores activity on records
 - Example: Milestone "praying" selected on July 27 2020 at 7:23pm
 
