@@ -85,28 +85,28 @@ The following field types are currently captured:
 (
      [action] => connected to
      [object_type] => contacts
-     [object_subtype] => connection
+     [object_subtype] => $from_field_key
      [object_id] => 536
      [object_name] => MAKE Contact
      [meta_id] => 572
      [meta_key] => contacts_to_groups
      [meta_value] => 317
      [meta_parent] => 
-     [object_note] => 
-     [field_type] => connection from
+     [object_note] => connection from
+     [field_type] => connection
  )
  (
      [action] => connected to
      [object_type] => groups
-     [object_subtype] => connection
+     [object_subtype] => $to_field_key
      [object_id] => 317
      [object_name] => Metric Group
      [meta_id] => 572
      [meta_key] => contacts_to_groups
      [meta_value] => 536
      [meta_parent] => 
-     [object_note] => 
-     [field_type] => connection to
+     [object_note] => connection to
+     [field_type] => connection
  )
 ```
 
