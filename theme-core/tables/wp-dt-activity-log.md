@@ -4,11 +4,11 @@
 D.T custom table; which captures a wide array of system events, such as field updates.
 
 
-### Field Update Events
+## Field Update Events
 
 The following field types are currently captured:
 
-- text:
+### text:
 ```php
 (
     [action] => field_update
@@ -26,7 +26,7 @@ The following field types are currently captured:
 )
 ```
 
-- date:
+### date:
 ```php
 (
     [action] => field_update
@@ -44,7 +44,7 @@ The following field types are currently captured:
 )
 ```
 
-- key_select:
+### key_select:
 ```php
  (
      [action] => field_update
@@ -62,7 +62,7 @@ The following field types are currently captured:
  )
 ```
 
-- multi_select:
+### multi_select:
 ```php
  (
      [action] => field_update
@@ -80,7 +80,7 @@ The following field types are currently captured:
  )
 ```
 
-- connection:
+### connection:
 ```php
 (
      [action] => connected to
@@ -110,7 +110,7 @@ The following field types are currently captured:
  )
 ```
 
-- number:
+### number:
 ```php
 (
      [action] => field_update
@@ -128,7 +128,7 @@ The following field types are currently captured:
  )
 ```
 
-- communication_channel:
+### communication_channel:
 ```php
 (
      [action] => field_update
@@ -160,7 +160,7 @@ The following field types are currently captured:
  )
 ```
 
-- tags:
+### tags:
 ```php
 (
      [action] => field_update
@@ -178,7 +178,7 @@ The following field types are currently captured:
  )
 ```
 
-- user_select:
+### user_select:
 ```php
 (
      [action] => field_update
@@ -196,7 +196,7 @@ The following field types are currently captured:
  )
 ```
 
-- location:
+### location:
 ```php
 (
      [action] => field_update
@@ -214,7 +214,7 @@ The following field types are currently captured:
  )
 ```
 
-- location_meta:
+### location_meta:
 ```php
 (
      [action] => field_update
