@@ -102,6 +102,25 @@ let searchParameters = {
 }
 ```
 
+Example:
+
+```javascript
+// get contacts with no groups connected
+let searchParameters = {
+   groups: [] 
+}
+```
+
+Example:
+
+```javascript
+// get all contact with any connected group
+let searchParameters = {
+   groups: [*] 
+}
+```
+
+
 ### `location`
 
 Parameters: \(array\) of location\_grid IDs
