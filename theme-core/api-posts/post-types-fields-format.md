@@ -162,6 +162,24 @@ $fields = [
 ]
 ```
 
+## datetime
+
+* meeting\_time
+
+Can be either a date string or a numeric timestamp.
+
+```php
+$fields = [
+  "meeting_time" => "2018-12-31" //format yyyy-mm-dd
+]
+```
+
+```php
+$fields = [
+  "meeting_time" => 946720800 //timestamp
+]
+```
+
 ## user\_select
 
 * assigned\_to //int, a user id
