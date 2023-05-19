@@ -176,7 +176,7 @@ Use the time formats on here [PHP DateTime Formats](https://www.php.net/manual/e
 
 ```php
 $fields = [
-  "meeting_time" => "2018-12-31 12:15 pm GMT-06:00" //format yyyy-mm-dd
+  "meeting_time" => "2018-12-31 12:15 pm GMT-06:00" //format yyyy-mm-dd hh:MM timezone-adjustment
 ]
 ```
 
