@@ -33,3 +33,5 @@ $args = [
 ];
 return wp_remote_post( 'https://example.disciple.tools/wp-json/dt-posts/v2/contacts', $args );
 ```
+
+$fields need to be in the format specified in [Fields Format](theme-core/api-posts/post-types-fields-format.md)
