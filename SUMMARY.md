@@ -33,7 +33,7 @@
   * [Authentication](theme-core/authentication/README.md)
     * [JWT-Authentication-for-the-mobile-app](theme-core/authentication/jwt-authentication-for-the-mobile-app.md)
     * [Site-to-Site-Link](theme-core/authentication/site-to-site-link.md)
-    * [Easy-Example](theme/core/athentication/easy-example.md)
+    * [Easy-Example](theme-core/authentication/easy-example.md)
   * [Permissions](theme-core/capabilities.md)
   * [Roles and Permissions](theme-core/roles-permissions.md)
   * [Database Tables](theme-core/tables/tables.md)
