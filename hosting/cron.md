@@ -22,7 +22,7 @@ Then,
 
 you want to setup a cron on your server or with your hosting service to run every 5 mins:
 
-`*/5 * * * * wget -q -O - http://yourdomain.com/wp-cron.php?doing_wp_cron >/dev/null 2>&1`
+`*/5 * * * * wget -q -O - http://yourdomain.com/wp-cron.php?doing_wp_cron > /dev/null 2>&1`
 
 **Note:** change `yourdomain.com` to you disciple.tools domain
 
