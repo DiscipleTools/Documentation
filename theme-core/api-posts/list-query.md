@@ -202,7 +202,7 @@ let searchParameters = {
 
 ### `text` `communication_channel`
 
-Parameters: \(array\) or text te search for.
+Parameters: \(array\) or text to search for.
 
 * contact\_phone
 * name
@@ -235,9 +235,29 @@ let searchParameters = {
 Example:
 
 ```javascript
-// search for "Bob"
+// search records with values matching "Bob" anywhere within the name field
 let searchParameters = {
-  text: "Bob"
+  name: ["Bob"]
+}
+
+// search records for names matching "Bob" exactly
+let searchParameters = {
+  name: ["^Bob"]
+}
+
+// search records for names; which do not match "Bob"
+let searchParameters = {
+  name: ["-Bob"]
+}
+
+// search records for any names
+let searchParameters = {
+  name: ["-*"]
+}
+
+// search for records with no names set
+let searchParameters = {
+  name: ["^"]
 }
 ```
 
