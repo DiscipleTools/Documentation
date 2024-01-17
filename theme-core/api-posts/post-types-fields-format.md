@@ -162,6 +162,30 @@ $fields = [
 ]
 ```
 
+## datetime
+
+* meeting\_time
+
+Can be either a date string or a numeric timestamp.
+
+If sent as a date string, care must be taken with timezones etc.
+
+If a timezone isn't sent in the time string, the timezone will be assumed, so it is recommended to include the timezone information in the date string to get a precise timestamp.
+
+Use the time formats on here [PHP DateTime Formats](https://www.php.net/manual/en/datetime.formats.time.php) for the timestring format
+
+```php
+$fields = [
+  "meeting_time" => "2018-12-31 12:15 pm GMT-06:00" //format yyyy-mm-dd hh:MM timezone-adjustment
+]
+```
+
+```php
+$fields = [
+  "meeting_time" => 946720800 //timestamp
+]
+```
+
 ## user\_select
 
 * assigned\_to //int, a user id
