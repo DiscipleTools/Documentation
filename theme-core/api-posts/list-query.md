@@ -257,7 +257,7 @@ let searchParameters = {
 
 // search for records with no names set
 let searchParameters = {
-  name: ["^"]
+  name: []
 }
 ```
 
