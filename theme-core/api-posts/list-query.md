@@ -229,7 +229,7 @@ let searchParameters = {
 
 // search for records with no phone numbers
 let searchParameters = {
-  contact_phone: ["123"]
+  contact_phone: []
 }
 ```
 
