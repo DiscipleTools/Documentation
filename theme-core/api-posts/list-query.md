@@ -243,7 +243,7 @@ let searchParameters = {
 }
 ```
 
-### Golbal Search Parameters
+### Record `Text` dynamic Search
 
 **text** \(string\) searches contact or group names/titles and contact information \(email, phone etc\)
 
@@ -252,7 +252,7 @@ Example:
 ```javascript
 // search for "Bob"
 let searchParameters = {
-  text: ["Bob"]
+  text: "Bob"
 }
 ```
 
