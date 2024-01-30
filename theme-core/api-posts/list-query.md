@@ -226,6 +226,11 @@ let searchParameters = {
 let searchParameters = {
   contact_phone: ["123", "-234"]
 }
+
+// search for records with no phone numbers
+let searchParameters = {
+  contact_phone: []
+}
 ```
 
 ### Search Parameters
@@ -252,12 +257,12 @@ let searchParameters = {
 
 // search records for any names
 let searchParameters = {
-  name: ["-*"]
+  name: ["*"]
 }
 
 // search for records with no names set
 let searchParameters = {
-  name: ["^"]
+  name: []
 }
 ```
 
