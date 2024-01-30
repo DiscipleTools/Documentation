@@ -222,9 +222,19 @@ let searchParameters = {
   contact_phone: ["^123"]
 }
 
+// search records for names; which do not match "Bob"
+let searchParameters = {
+  name: ["-Bob"]
+}
+
 // search phone numbers matching 123 but don't match 234
 let searchParameters = {
   contact_phone: ["123", "-234"]
+}
+
+// search records for any phone number
+let searchParameters = {
+  contact_phone: ["*"]
 }
 
 // search for records with no phone numbers
@@ -233,36 +243,16 @@ let searchParameters = {
 }
 ```
 
-### Search Parameters
+### Golbal Search Parameters
 
 **text** \(string\) searches contact or group names/titles and contact information \(email, phone etc\)
 
 Example:
 
 ```javascript
-// search records with values matching "Bob" anywhere within the name field
+// search for "Bob"
 let searchParameters = {
-  name: ["Bob"]
-}
-
-// search records for names matching "Bob" exactly
-let searchParameters = {
-  name: ["^Bob"]
-}
-
-// search records for names; which do not match "Bob"
-let searchParameters = {
-  name: ["-Bob"]
-}
-
-// search records for any names
-let searchParameters = {
-  name: ["*"]
-}
-
-// search for records with no names set
-let searchParameters = {
-  name: []
+  text: ["Bob"]
 }
 ```
 
