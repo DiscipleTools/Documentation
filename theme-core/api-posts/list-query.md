@@ -257,6 +257,7 @@ let searchParameters = {
 
 // search across all fields
 let searchParameters = {
+  text: "Bob",
   fields_to_search: ["all"]
 }
 
