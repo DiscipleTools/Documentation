@@ -22,6 +22,13 @@
 
 `POST` [https://example.com/wp-json/dt/v2/{post\_type}/{post\_id}/comments](https://example.com/wp-json/dt/v2/{post_type}/{post_id}/comments)
 
+```javascript
+{
+    "comment": "A simple comment....",
+    "comment_type": "contact_twitter"
+}
+```
+
 ### Parameters
 
 * **comment** \(string\) the body of the comment. 
@@ -53,9 +60,17 @@ Query params: add `?silent=true` to disable notifications
 
 `POST` [https://example.com/wp-json/dt/v2/{post\_type}/{post\_id}/comments/{comment\_id}](https://example.com/wp-json/dt/v2/{post_type}/{post_id}/comments/{comment_id})
 
+```javascript
+{
+    "comment": "An updated simple comment....",
+    "comment_type": "contact_twitter"
+}
+```
+
 ### Parameters
 
 * **comment** \(string\) the body of the comment.
+* **comment\_type** \(string\) the comment type.
 
 ### Returns
 

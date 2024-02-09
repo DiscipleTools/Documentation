@@ -31,6 +31,12 @@ Example format:
 
 `POST` [https://example.com/wp-json/dt-posts/v2/{post\_type}/{post\_id}/shares](https://example.com/wp-json/dt-posts/v2/{post_type}/{post_id}/shares)
 
+```javascript
+{
+    "user_id": 8
+}
+```
+
 ### Parameters
 
 * **user\_id** \(int\): the id of the user to share the post with
