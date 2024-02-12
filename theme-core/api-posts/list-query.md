@@ -245,32 +245,54 @@ let searchParameters = {
 
 ### Record `Text` dynamic Search
 
-**text** \(string\) searches against contact or group names/titles and contact information \(email, phone etc\)
+**text** \(string\) searches for given text against specified `fields_to_search` or `all` fields.
+**fields_to_search** \(array\) fields to search against.
 
-Example:
+* all
+* comment
+* name
+* nickname
+* etc
+
+**fields_to_return** \(array\) record fields to be returned and displayed.
+
+* name
+* assigned_to
+* last_modified
+* etc
+
+**overall_status** \(array\) record statuses to search against.
+
+* `closed` // search against closed records.
+* `-closed` // search against active records.
+
+**sort** \(string\) sort returned records by given datetime field.
+
+* `post_date` // sort by field `post_date` in ascending order.
+* `-post_date` // sort by field `post_date` in decending order.
+
+**offset** \(integer\) specify where within the dataset to start searching from.
+
+**limit** \(integer\) specify maximum number of records to be returned.
+
+Examples:
 
 ```javascript
-// search for "Bob"
+// search for "Bob" across specified fields and return identified fields
 let searchParameters = {
-  text: "Bob"
+  text: "Bob",
+  fields_to_search: ["comms","comment","name","nickname"],
+  fields_to_return: ["name","favorite","overall_status","seeker_path","milestones","assigned_to","groups","starter_post_type","last_modified"],
+  overall_status: ["-closed"],
+  sort: "-post_date",
+  offset: 10,
+  limit: 100
 }
 
-// search across all fields
+// search across all fields, using default options
 let searchParameters = {
   text: "Bob",
   fields_to_search: ["all"]
-}
-
-// search specific field for given text query
-let searchParameters = {
-  text: "Bob",
-  fields_to_search: ["nickname"]
-}
-
-// search multiple fields for given text query
-let searchParameters = {
-  text: "Bob",
-  fields_to_search: ["nickname", "name"]
 }
 ```
 
