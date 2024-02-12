@@ -246,7 +246,7 @@ let searchParameters = {
 ### Record `Text` dynamic Search
 
 * **text** \(string\). 
-* *fields_to_search** \(array\). Default is \["name", "comms"\].
+* **fields_to_search** \(array\). Default is \["name", "comms"\].
 
 fields_to_search options:
 * all
