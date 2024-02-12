@@ -245,8 +245,8 @@ let searchParameters = {
 
 ### Record `Text` dynamic Search
 
-**text** \(string\). 
-**fields_to_search** \(array\). Default is \["name", "comms"\].
+* **text** \(string\). 
+* *fields_to_search** \(array\). Default is \["name", "comms"\].
 
 fields_to_search options:
 * all
@@ -254,9 +254,6 @@ fields_to_search options:
 * name
 * `text_field_key` // any text field key
 * comms //communication channels
-
-By default, this searches against contact or group names/titles and contact information \(email, phone etc\)
-
 
 Example:
 
