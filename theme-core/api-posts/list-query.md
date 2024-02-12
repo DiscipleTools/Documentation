@@ -245,15 +245,51 @@ let searchParameters = {
 
 ### Record `Text` dynamic Search
 
-**text** \(string\) searches contact or group names/titles and contact information \(email, phone etc\)
+**text** \(string\). 
+**fields_to_search** \(array\). Default is \["name", "comms"\].
+
+fields_to_search options:
+* all
+* comment
+* name
+* `text_field_key` // any text field key
+* comms //communication channels
+
+By default, this searches against contact or group names/titles and contact information \(email, phone etc\)
+
 
 Example:
 
 ```javascript
-// search for "Bob"
+// search for "Bob" in name and communication channel fields
 let searchParameters = {
   text: "Bob"
 }
+
+// search across all fields
+let searchParameters = {
+  text: "Bob",
+  fields_to_search: ["all"], //search all fields in the listed options
+}
+
+// search specific field for any text field like "nickname"
+let searchParameters = {
+  text: "Bob",
+  fields_to_search: ["nickname"]
+}
+
+// search multiple fields for given text query
+let searchParameters = {
+  text: "Bob",
+  fields_to_search: ["nickname", "name"]
+}
+
+// search for "Bob" in comments
+let searchParameters = {
+  text: "Bob",
+  fields_to_search: ["comment"]
+}
+
 ```
 
 ### Combining with AND/OR logic
@@ -365,9 +401,9 @@ After building the filter parameters, we need to transform the searchParameters 
 
 ```javascript
 let searchParameters = {
-  overall_status: ["active", "-closed"] // -closed filters out the closed records
-  seeker_path: ["none"]
-  sort: "post_date"
+  overall_status: ["active", "-closed"], // -closed filters out the closed records
+  seeker_path: ["none"],
+  sort: "post_date",
   sources: ["instagram"]
 }
 
