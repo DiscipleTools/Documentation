@@ -2,7 +2,6 @@
 
 ## Contents
 
-* [**Hosting on WPEngine**]()
 * **Hosting on a Local Computer**
   * [LocalWP Based Setup](localwp-setup.md)
   * [Alternative Docker Based Setup](dt-docker.md)
