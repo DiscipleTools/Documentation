@@ -7,6 +7,7 @@ Please use "Disciple.Tools" or "D.T" and avoid "Disciple Tools", or "DiscipleToo
 ## Theme Colors
 
 ![#3f729b](https://via.placeholder.com/15/3f729b/000000?text=+) Main color blue: \#3f729b  
+![#8BC34A](https://via.placeholder.com/15/8BC34A/000000?text=+) Secondary color: \#8BC34A  
 ![\#224f72](https://via.placeholder.com/15/224f72/000000?text=+) Darker blue: \#224f72  
 ![\#4caf50](https://via.placeholder.com/15/4caf50/000000?text=+) Success/New green: \#4caf50  
 ![\#00897B](https://via.placeholder.com/15/00897B/000000?text=+) Action butons: \#00897B
