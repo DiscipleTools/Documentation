@@ -52,6 +52,7 @@ function dt_contact_fields( array $fields, string $post_type = ""){
 * **description**: \(string\). Extra context for the field. May show up in the help modals. Optional.
 * **default**: \(array, string\). Options for the field. Required for key\_select\_and multi\_select fields.   
 * **icon**: \(string\). The url of the icon to display next to the name.
+* **font-icon**: \(string\). Font icon like `mdi mdi-robot-outline` using material icons. See [mdi](https://pictogrammers.com/library/mdi/)
 * **tile**: \(string\). Which tile this field should be displayed on.
 * **customizable**: \(bool, string\). If this field is customizable by the user in the wp\_admin settings page. Options: false, 'add\_only'
 * **in\_create\_form**: \(bool, array\). Whether this field should be visible by default on the create post page. Either true or an array of \(post\) types to display on ex: \[ "personal", "access" \]. 
@@ -142,4 +143,6 @@ $fields["members"] = [
 ## Function to have D.T display a field:
 
 `render_field_for_display( $field_key, $fields_options, $post, $show_extra_controls = false, $show_hidden = false )`
+
+
 
