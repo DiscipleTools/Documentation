@@ -137,7 +137,7 @@ let searchParameters = {
 }
 ```
 
-#### `date`
+### `date`
 
 Parameters: **start** and **end**
 
