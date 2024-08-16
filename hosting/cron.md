@@ -33,7 +33,26 @@ An alternative to setting up a cron job is to use a service like [Uptime Robot](
 
 
 ## On Multisites
-The same process has to be done on each subsite on your multisite
+
+### Option 1 
+Create a cron job for each subsite
 - http://yourdomain.com/wp-cron.php?doing_wp_cron
 - http://subsite1.yourdomain.com/wp-cron.php?doing_wp_cron
 - http://subsite2.yourdomain.com/wp-cron.php?doing_wp_cron
+
+### Option 2
+Create a file custom-cron.sh in the same folder as your wp-config.php
+
+custom-cron.sh contents:
+```
+/usr/local/bin/php /usr/local/bin/wp site list --field=domain --archived=0 --deleted=0 | xargs -i -n1 /usr/local/bin/php /usr/local/bin/wp cron event run --due-now --url="https://{}";
+```
+
+create the cron job, replace `/path/to/wp/install` with the path to you wordpress installating.
+
+`cd /path/to/wp/install && /path/to/wp/install/custom-cron.sh`
+
+On a large multisite you might want to make sure cron jobs don't run at the same time. For this we create a lock file while custom-cron.sh is running.
+
+`cd /path/to/wp/install && /usr/bin/flock -n /tmp/multisitecron.lock /path/to/wp/install/custom-cron.sh`
+
