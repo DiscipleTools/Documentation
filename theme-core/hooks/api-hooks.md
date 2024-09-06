@@ -20,7 +20,7 @@ _fields processed_
 
 **dt\_post\_created** action  
 Runs after post is created and fields are processed  
-Parameters 3: string $post\_type, int post\_id, array $initial\_request\_fields
+Parameters 3: string $post\_type, int $post\_id, array $initial\_request\_fields
 
 ## Update Post
 
@@ -43,6 +43,12 @@ Parameters 5: string $post\_type, int post\_id, array $initial\_request\_fields,
 **dt\_after\_get\_post\_fields\_filter** filter  
 Add, modify or remove fields from the response  
 Parameters 2: array $fields, string $post\_type
+
+## Delete Post
+
+**dt\_post\_deleted** action
+Runs after post is deleted
+Parameters 3: string $post\_type, int $post\_id, string $post\_title
 
 ## List Post
 
