@@ -47,6 +47,10 @@ Parameters 2: array $fields, string $post\_type
 
 ## Delete Post
 
+**dt\_before\_post\_deleted** action<br>
+Runs before a post is deleted, allowing you to inspect the post before it's deleted.<br>
+Parameters 2: string $post\_type, int $post\_id
+
 **dt\_post\_deleted** action<br>
 Runs after post is deleted.<br>
 Parameters 3: string $post\_type, int $post\_id, string $post\_title
