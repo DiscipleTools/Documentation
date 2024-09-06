@@ -13,7 +13,8 @@ Add, remove or modify fields before the fields are processed.
 Parameters 2: array $fields, string $post\_type
 
 **dt\_post\_create\_allow\_fields** filter  
-Add extra field keys that are allowed. The API will reject requests with fields that are not declared or allowed Parameters 2: array $field\_keys, string $post\_type
+Add extra field keys that are allowed. The API will reject requests with fields that are not declared or allowed<br>
+Parameters 2: array $field\_keys, string $post\_type
 
 _post created_  
 _fields processed_
@@ -25,7 +26,7 @@ Parameters 3: string $post\_type, int $post\_id, array $initial\_request\_fields
 ## Update Post
 
 **dt\_post\_update\_fields** filter  
-Add, remove or modify fields before the fields are processed.  
+Add, remove or modify fields before the fields are processed.<br>
 Parameters 4: array $fields, string $post\_type, int $post\_id, array $existing\_post
 
 **dt\_post\_create\_allow\_fields** filter  
@@ -41,13 +42,13 @@ Parameters 5: string $post\_type, int post\_id, array $initial\_request\_fields,
 ## Get Post
 
 **dt\_after\_get\_post\_fields\_filter** filter  
-Add, modify or remove fields from the response  
+Add, modify or remove fields from the response<br>
 Parameters 2: array $fields, string $post\_type
 
 ## Delete Post
 
-**dt\_post\_deleted** action
-Runs after post is deleted
+**dt\_post\_deleted** action<br>
+Runs after post is deleted.<br>
 Parameters 3: string $post\_type, int $post\_id, string $post\_title
 
 ## List Post
