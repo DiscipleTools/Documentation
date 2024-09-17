@@ -33,7 +33,9 @@ The Serve could be set up like this:
 
 You may choose to have a different instance for each location you are in. You can also separate based on teams, language, media page, etc.
 
+Note: On multisites, only Super Admins can modify a user's email address or password. This makes supporting users harder for the subsite administrator.
 Note: We'd love to support team functionality inside one instance. Follow us at [https://disciple.tools/news/](https://disciple.tools/news/)
+
 
 ## Global Metrics - Network Dashboard
 
