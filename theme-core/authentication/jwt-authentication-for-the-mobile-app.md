@@ -164,6 +164,20 @@ If the token is invalid an error will be returned. Here are some samples of erro
 ]
 ```
 
+## Usage
+
+Usage:
+```php
+$token = "token retrieved above"
+$args = [
+  'method' => 'GET',
+  'headers' => [
+      'Authorization' => 'Bearer ' . $token,
+  ],
+];
+return wp_remote_get( 'https://example.disciple.tools/wp-json/dt-posts/v2/contacts', $args );
+```
+
 ### /wp-json/jwt-auth/v1/token/validate
 
 This is a simple helper endpoint to validate a token; you only will need to make a POST request sending the Authorization header.
