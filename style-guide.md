@@ -4,6 +4,16 @@
 
 Please use "Disciple.Tools" or "D.T" and avoid "Disciple Tools", or "DiscipleTools" or other variants.
 
+## Logos
+
+File | Description 
+--- | ---
+![Disciple.Tools Logo Black](./assets/logos/DT-black-text.png) | Black logo with text | [Download](
+![Disciple.Tools Logo White](./assets/logos/DT-white-text.png) | White logo with text
+<img src="https://github.com/DiscipleTools/Documentation/blob/master/assets/logos/dt-caret.png?raw=true" width=200> | Icon in png format
+<img src="https://github.com/DiscipleTools/Documentation/blob/master/assets/logos/dt-caret.svg?raw=true" width=200> | Icon in svg format
+
+
 ## Theme Colors
 
 ![#3f729b](https://via.placeholder.com/15/3f729b/000000?text=+) Main color blue: \#3f729b  
