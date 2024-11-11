@@ -6,12 +6,12 @@ Please use "Disciple.Tools" or "D.T" and avoid "Disciple Tools", or "DiscipleToo
 
 ## Logos
 
-File | Description 
---- | ---
-![Disciple.Tools Logo Black](./assets/logos/DT-black-text.png) | Black logo with text | [Download](
-![Disciple.Tools Logo White](./assets/logos/DT-white-text.png) | White logo with text
-<img src="https://github.com/DiscipleTools/Documentation/blob/master/assets/logos/dt-caret.png?raw=true" width=200> | Icon in png format
-<img src="https://github.com/DiscipleTools/Documentation/blob/master/assets/logos/dt-caret.svg?raw=true" width=200> | Icon in svg format
+File | Description | Link
+--- | --- | ---
+![Disciple.Tools Logo Black](./assets/logos/DT-black-text.png) | Black logo with text | [Download](https://github.com/DiscipleTools/Documentation/blob/master/assets/logos/DT-black-text.png)
+![Disciple.Tools Logo White](./assets/logos/DT-white-text.png) | White logo with text | [Download](https://github.com/DiscipleTools/Documentation/blob/master/assets/logos/DT-white-text.png)
+<img src="https://github.com/DiscipleTools/Documentation/blob/master/assets/logos/dt-caret.png?raw=true" width=200> | Icon in png format | [Download](https://github.com/DiscipleTools/Documentation/blob/master/assets/logos/dt-caret.png)
+<img src="https://github.com/DiscipleTools/Documentation/blob/master/assets/logos/dt-caret.svg?raw=true" width=200> | Icon in svg format | [Download](https://github.com/DiscipleTools/Documentation/blob/master/assets/logos/dt-caret.svg)
 
 
 ## Theme Colors
