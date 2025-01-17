@@ -2,6 +2,35 @@
 
 Thank you for joining us in contributing to Disciple.Tools! These are the guidelines we expect you to follow in writing code that will be used in or with D.T
 
+## How to Contribute to the theme
+Follow these steps.
+
+1. Fork it!
+2. Create your feature branch: `git checkout -b my-new-feature`
+3. Commit your changes: `git commit -am 'Add some feature'`
+4. Push to the branch: `git push origin my-new-feature`
+5. Submit a pull request
+
+## Setup for Develope
+
+### Install Composer
+
+Download and install composer via [their instructions](https://getcomposer.org/download/) or via Homebrew:
+```
+$ brew update
+$ brew install composer
+```
+Install o
+Run Composer to install dependencies
+```
+$ composer install
+```
+
+### Install NPM dependencies
+```
+$ npm install
+```
+
 ## Translations
 
 D.T is already being used in multiple languages. Please help us make D.T translable by taking full advantage of Wordpress’ translatable strings. Any string that will be read by the user must be marked as translatable. Ex: `<label class="section-header"><?php esc_html_e( 'Other', 'disciple_tools' )?></label>`
