@@ -1,4 +1,4 @@
-# Fields Format
+# Create/Update Fields Format
 
 Fields have different types. Each type will need it's own syntax. The list of fields will changed based on your D.T instance. For a list of available fields have a look at: the field explorer tool under Utilities in your wp-admin.
 
