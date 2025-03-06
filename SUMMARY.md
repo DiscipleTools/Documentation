@@ -52,6 +52,7 @@
   * [LocalWP](local-setup/localwp-setup.md)
   * [Mobile App Setup](local-setup/mobile-app-setup.md)
   * [Unit Tests](local-setup/theme-phpunit-tests.md)
+  * [Cypress Tests](local-setup/cypress-tests.md)
   * [D.T on Docker Setup](local-setup/dt-docker.md)
   * [Gulp - CSS and JS](local-setup/gulp-js-css.md)
 * [Code Contribution](code-contribution/README.md)
