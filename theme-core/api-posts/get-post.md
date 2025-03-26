@@ -9,7 +9,7 @@ Requires permission: `access_{post_type}`
 \(json object\): the contact. Each field type will show in a different way:
 
 * **"ID"**
-* **"title"**:"John Doe",
+* **"name"**:"John Doe",
 * **"created\_date"**:"2018-06-05 16:07:16",
 * **"last\_modified"**:"1552987784",  //date the contact has last been modified
 * **text fields**
