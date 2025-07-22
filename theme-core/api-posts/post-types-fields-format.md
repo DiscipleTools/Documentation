@@ -3,7 +3,7 @@
 Fields have different types. Each type will need it's own syntax. The list of fields will changed based on your D.T instance. For a list of available fields have a look at: the field explorer tool under Utilities in your wp-admin.
 
 > **Note:**  
-> For create and update endpoints, the `do_not_overwrite_existing_fields` parameter (enabled by default) prevents overwriting existing field values. For multi-value fields (such as tags, multi_select, user_select, connection, location, location_meta, communication_channel), both direct array format (`[['value' => 'xxx']]`) and wrapped format (`['values' => [['value' => 'xxx']]]`) are accepted, but the API will always return the wrapped format for consistency.  
+> For creation and update endpoints, the `do_not_overwrite_existing_fields` parameter prevents overwriting existing field values. 
 > See the [Create Post](create-post.md) and [Update Post](update-post.md) documentation for details.
 
 ## text
