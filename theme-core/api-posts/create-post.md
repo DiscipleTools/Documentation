@@ -15,6 +15,13 @@ Check for duplicates on a field before creating an new post.
 If a duplicate is found, then the existing post will be updated instead of a new one created.  
 ex: `check_for_duplicates=contact_phone,contact_email`
 
+### do_not_overwrite_existing_fields (boolean)
+
+When enabled, existing field values on a post will not be overwritten during creation:
+
+- **Single-value fields:** If the field already has a value, it will be preserved and not updated.
+- **Multi-value fields:** Only new values that do not already exist will be added; existing values are preserved.
+
 ## Returns
 
 Will return the same content as: [Get Post](get-post.md)

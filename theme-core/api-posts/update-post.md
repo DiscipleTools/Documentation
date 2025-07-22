@@ -10,6 +10,13 @@ Body params: See [Post Types Fields Format](post-types-fields-format.md)
 
 Query params: add `?silent=true` to disable notifications
 
+### do_not_overwrite_existing_fields (boolean)
+
+When enabled, existing field values on a post will not be overwritten during update:
+
+- **Single-value fields:** If the field already has a value, it will be preserved and not updated.
+- **Multi-value fields:** Only new values that do not already exist will be added; existing values are preserved.
+
 ## Returns
 
 Will return the same content as: [Get Post](get-post.md)

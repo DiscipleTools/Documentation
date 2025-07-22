@@ -2,6 +2,10 @@
 
 Fields have different types. Each type will need it's own syntax. The list of fields will changed based on your D.T instance. For a list of available fields have a look at: the field explorer tool under Utilities in your wp-admin.
 
+> **Note:**  
+> For creation and update endpoints, the `do_not_overwrite_existing_fields` parameter prevents overwriting existing field values. 
+> See the [Create Post](create-post.md) and [Update Post](update-post.md) documentation for details.
+
 ## text
 
 Field examples:
