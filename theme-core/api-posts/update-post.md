@@ -17,10 +17,6 @@ When enabled, existing field values on a post will not be overwritten during upd
 - **Single-value fields:** If the field already has a value, it will be preserved and not updated.
 - **Multi-value fields:** Only new values that do not already exist will be added; existing values are preserved.
 
-To override this behavior and allow fields to be overwritten, set `do_not_overwrite_existing_fields` to `false` in the request body.
-
-**Note:** This setting may prevent some direct manual record field updates if the field already contains a value.
-
 ## Returns
 
 Will return the same content as: [Get Post](get-post.md)
